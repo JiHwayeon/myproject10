@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/headfoot.css">
   <link rel="stylesheet" href="css/sub.css">
+  <link rel="stylesheet" href="css/sub_mobile.css">
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
 </head>
@@ -16,7 +17,10 @@
     <form name="" action="" method="">
       <header id=header>
         <div class="sch">
-          <h1 class="potal"><a href="index.html">CBNU STARTUP – PORTAL</a></h1>
+          <h1 class="potal">
+            <a href="index.html">CBNU STARTUP – PORTAL</a>
+          </h1>
+          <h1 class="mlogo"><a href="index.html">로고</a></h1>
           <div class="search">
             <label for="search">검색</label>
             <input type="text" id="search" placeholder="검색어를 입력하세요." >
@@ -29,6 +33,88 @@
           <button type="button" class="menubar open1">
             <span>menubar</span>
           </button>
+          <button type="button" class="mMenubar open2">
+            <span>menubar</span>
+          </button>
+          <div id="mGnb" class="mobileWrap">
+            <div class="mMenuhead">
+              <a href="index.html" class="home"></a>
+              <a href="#" class="close2">닫기</a>
+              <div>
+                <div>loginperson</div>
+                <p>로그인해주세요</p>
+              </div>
+            </div>
+            <ul class="menuWrap clear">
+              <li class="has-sub">
+                <a href="#">안내</a>
+                <button type="button">열기</button>
+                <ul>
+                  <li><a href="sub_intro.html"><span>인사말</span></a></li>
+                  <li><a href="sub_vision.html"><span>비전</span></a></li>
+                  <li><a href="sub_org.html"><span>부서안내</span></a></li>
+                  <li><a href="sub_cal.html"><span>창업캘린더</span></a></li>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a href="#">창업친화적제도</a>
+                <button type="button">열기</button>
+                <ul>  
+                  <li>
+                    <a href="sub_Tsystem.html">
+                      <span>교원 창업친화적 인사제도</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="sub_Ssystem.html">
+                      <span>학생 창업친화적 학사제도</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a href="#">창업대체학점인정제 이수지원</a>
+                <button type="button">열기</button>
+                <ul>   
+                  <li>
+                    <a href="sub_sup1.html">
+                      <span>창업대체학점인정제 이수신청</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="sub_sup2.html">
+                      <span>창업대체학점인정제  
+                        이수인정 서류제출</span>
+                    </a>
+                  </li>    
+                </ul>
+              </li>
+              <li class="has-sub"><a href="#">창업지원</a>
+                <button type="button">열기</button>
+                <ul>
+                  <li><a href="sub_pgrm1.html"><span>실험실창업지원</span></a></li>
+                    <!-- <li><a href="sub_pgrm2.html"><span>창업아이템 사업화<br>지원사업</span></a></li> -->
+                    <li><a href="sub_pgrm4.html"><span>LINC사업단</span></a></li>
+                    <li><a href="sub_pgrm5.html"><span>이노폴리스캠퍼스 사업(강소특구지원사업)</span></a></li>
+                    <li><a href="sub_pgrm6.html"><span>소프트웨어중심대학사업단</span></a></li>
+                    <li><a href="sub_pgrm7.html"><span>창업동아리</span></a></li>     
+                </ul>
+              </li>
+              <li class="has-sub"><a href="#">창업교육</a>
+                <button type="button">열기</button>
+                <ul>
+                  <li>
+                    <a href="sub_pgrm3.html"><span>창업강좌</span></a>
+                  </li>
+                  <li><a href="https://cbnusos.com/guide/8"><span>일반인 창업강좌</span></a></li>
+                </ul>
+              </li>
+              <li class="has-sub"><a href="#">창업상담</a></li>
+              <li class="has-sub"><a href="#">공지사항</a></li>
+            </ul>     
+            <div class="loginBox">로그인</div>
+           </div>
+          <!--.mobileWrap-->
         </div>
         <!--.sch-->
       <div class="navBox">
@@ -112,8 +198,6 @@
               </ul>
           </nav>
           <!--nav-->
-        <!-- </div> -->
-        <!--.inner-->
         <div class="leftWrap">
           <a href="#" class="close1">닫기</a>
             <ul class="mgnb clear">
@@ -188,7 +272,7 @@
         <!--.leftWrap-->
       </div>
       <!--.navBox-->
-    </header>
+      </header>
     <!--#header-->
     <div class="subSkin bg4"> 
     </div>
@@ -205,47 +289,54 @@
       <aside id="mb_lnb">
         <ul>
           <li class="depth1">
-            
-            <button type="button">센터소개</button>
+            <button type="button">창업지원</button>
             <ul style="display: none;">
+              <li>
+                <a href="#">안내</a>
+              </li>
+              <li>
+                <a href="#">창업친화적제도</a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>창업대체학점인정제<br>이수지원</span>
+                </a>
+              </li>
               <li class="on">
-                <a href="#">센터소개</a>
+                <a href="#">창업지원</a>
               </li>
               <li>
-                <a href="#">대학교육혁신</a>
+                <a href="#">창업교육</a>
               </li>
               <li>
-                <a href="#">핵심분야</a>
+                <a href="#">창업상담</a>
               </li>
               <li>
-                <a href="#">알림마당</a>
+                <a href="#">공지사항</a>
               </li>
-              <li>
-                <a href="#">커뮤니티</a>
-              </li>
-             
            </ul>
           </li>
           <li class="depth2">
-            <button type="button">센터소개</button>
+            <button type="button">창업지원</button>
             <ul style="display: none;">
-              <li>
-                    <a href="sub_intro.html">인사말</a>
-              </li>
               <li class="on">
-                    <a href="sub_imp.html">비전 및 목표</a>
+                <a href="sub_pgrm1.html">실험실창업지원</a>
               </li>
               <li>
-                <a href="sub_core.html">핵심분야</a>
+                <a href="sub_pgrm4.html">LINC사업단</a>
               </li>
               <li>
-                <a href="sub_ci.html">CI소개</a>
+                <a href="sub_pgrm5.html">
+                  <span>이노폴리스캠퍼스 사업<br>(강소특구지원사업)</span>
+                </a>
               </li>
               <li>
-                <a href="sub_org.html">조직도</a>
+                <a href="sub_pgrm6.html">
+                  <span>소프트웨어중심대학<br>사업단</span>
+                </a>
               </li>
               <li>
-                <a href="sub_map.html">오시는 길</a>
+                <a href="sub_pgrm7.html">창업동아리</a>
               </li>
            </ul>
           </li>
@@ -263,13 +354,6 @@
           <li class="has-sub">
             <a href="sub_pgrm1.html">실험실창업지원</a>
           </li>
-          <!-- <li class="has-sub">
-            <a href="sub_pgrm2.html">
-              <span>
-                창업아이템 사업화<br>지원사업
-              </span>
-            </a>
-          </li> -->
           <li class="has-sub">
             <a href="sub_pgrm4.html">LINC사업단</a>
           </li>
@@ -298,7 +382,9 @@
             </ul>
             <div class="tab_contents active">  
               <div class="prg2">
-                <p class="stepImg5"></p>
+                <p class="stepImg5">
+                  <img src="img/step9.png" alt="">
+                </p>
                 <ul>
                   <li>
                     <span class="bigTit">사업개요</span>
@@ -306,7 +392,8 @@
                       <li class="clear">
                         <span class="smTit3">사업목적</span>
                         <ol class="list3">
-                          <li>대학(원) 실험실(Lab)이 보유한 기술이 高부가가치 기술혁신형창업으로 이어질 수 있도록<br>
+                          <li>
+                            대학(원) 실험실(Lab)이 보유한 기술이 高부가가치 기술혁신형창업으로 이어질 수 있도록<br>
                             대학원 수준의 창업교육 인프라 조성 및 기술기반창업 인재 양성</li>
                         </ol>
                       </li>
@@ -378,17 +465,21 @@
                         </ol>
                       </li>
                       <li>
-                        <p class="stepImg6"></p>
+                        <p class="stepImg6">
+                          <img src="img/step10.png" alt="">
+                        </p>
                       </li>
                       <li class="clear">
-                        <span class="smTit4">실험실 창업교육<br>
-                          프로그램</span>
+                        <div class="smTit4">
+                          <span>실험실 창업교육</span>
+                          <span>프로그램</span>
+                        </div>
                         <ol class="list7 list9">
                           <li>실험실 창업 활성화와 저변확대를 위한 실험실 창업교육의 체계적인 운영
                           </li>
                         </ol>
                       </li>
-                      <li>
+                      <li style="overflow: hidden;">
                         <div class="tA5">
                           <table  cellspacing="0" cellpadding="4px" width="100%" class="tablCon">
                             <colgroup>
@@ -409,32 +500,42 @@
                                 <td class="td_blue8">창업 동아리</td>
                                 <td class="td_blue9">
                                   <span>
-                                    실험실 대학원생을 대표로 하는 2인 이상의 창업동아리를 선발하고<br>
-                                    아이템개발비 및 활동비 지급, 멘토링 등을 통해 실험실창업 팀으로 육성
+                                    실험실 대학원생을 대표로 하는 2인 이상의 창업동아리를 선발하고</span>
+                                    <span>아이템개발비 및 활동비 지급, 멘토링 등을 통해 실험실창업 팀으로 육성
                                   </span>
                                 </td>
                               </tr>
                               <tr>
-                                <td class="td_blue8">창업 교과과정</td>
+                                <td class="td_blue8">
+                                  <span>창업 교과과정</span>
+                                </td>
                                 <td class="td_blue9">
                                   <span>
-                                    교내 대학원 정규 교과과정에 창업관련 과목을 개설하고<br>
+                                    교내 대학원 정규 교과과정에 창업관련 과목을 개설하고
+                                  </span>
+                                  <span>
                                     실전적인 창업교육을 실시함으로써 교내 실험실 창업 문화 확산 및 저변확대
                                   </span>
                                 </td>
                               </tr>
                               <tr>
-                                <td class="td_blue8">실험실창업 캠프</td>
+                                <td class="td_blue8">
+                                  <span>실험실창업 캠프</span>
+                                </td>
                                 <td class="td_blue9">
-                                  <span>참가자 간 창업 인적 네트워크 구축을   지원하고<BR>
-                                    창업 아이템에 대한 비즈니스 모델을 향상시킬 수 있는 기회 제공</span>
+                                  <span>참가자 간 창업 인적 네트워크 구축을   지원하고</span>
+                                  <span>창업 아이템에 대한 비즈니스 모델을 향상시킬 수 있는 기회 제공</span>
                                 </td>
                               </tr>
                               <tr>
-                                <td class="td_blue8">실험실창업 실리콘밸리 탐방</td>
+                                <td class="td_blue8">
+                                  <span>실험실창업 실리콘밸리 탐방</span>
+                                </td>
                                 <td class="td_blue9">
                                   <span>
-                                    실험실 창업의 메카인 실리콘밸리 현지 탐방을 통해<BR>
+                                    실험실 창업의 메카인 실리콘밸리 현지 탐방을 통해
+                                  </span>
+                                  <span>
                                     선진 실험실 창업 문화 경험
                                   </span>
                                 </td>
@@ -452,10 +553,6 @@
                             중기부 초기창업패키지 사업*과 연계하여 실험실 창업기업에 대해 사업화 자금 및 공간, 멘토링 등 성장 지원(별도 트랙 선정)
                             <span>* 사업 내용: (예산) 90억원, (지원내용) 1개 기업당 사업화 자금 1.5억원 지원 등</span>
                           </li>
-                          <!-- <li>
-                            과기부 「실험실창업 이노베이터 육성사업*」과 연계하여 창업실무업무(BM 개발, 판로확보, 투자유치 등) 전담인력 배치(대학별 2명)
-                            <span>   * (‘20년 예산) 6.3억원, (지원내용) 대학이 창업전담인력(이노베이터)을<br>최소 1년동안 채용시 6개월(또는 연봉의 50%) 인건비(최대 2,250만원, 4대보험 기관부담금 포함)지원</span>
-                          </li> -->
                         </ol>
                       </li>
                     </ul>
@@ -467,7 +564,9 @@
             </div>
             <div class="tab_contents">
               <div class="prg2">
-                <p class="stepImg7"></p>
+                <p class="stepImg7">
+                  <img src="img/step11.png" alt="">
+                </p>
                 <ul>
                   <li>
                     <span class="bigTit">사업목적</span>
@@ -475,18 +574,24 @@
                       <li class="clear">
                         <span class="smTit4">사업목적</span>
                         <ol class="list7 list8">
-                          <li>대학 및 출연(연)의 연구실에서 나온 기초·원천 연구성과가<br>
-                            빠른 시간 내에 시장에서 활용될 수 있는 ‘Lab-to-Market’형 기술창업 교육을 지원</li>
+                          <li>
+                            <span>대학 및 출연(연)의 연구실에서 나온 기초·원천 연구성과가</span>
+                            <span>빠른 시간 내에 시장에서 활용될 수 있는 ‘Lab-to-Market’형 기술창업 교육을 지원</span>
+                          </li>
                         </ol>
                       </li>
                     </ul>
                     <ul>
                       <li>
-                        <span class="bigTit">실험실창업탐색팀 공모</span>
+                        <span class="bigTit">
+                          실험실창업탐색팀 공모
+                        </span>
                         <ul class="bigList">
                           <li class="clear">
-                            <span class="smTit4">실험실 창업<br>
-                              탐색팀 공모</span>
+                            <div class="smTit4">
+                              <span>실험실 창업</span>
+                              <span>탐색팀 공모</span>
+                            </div>
                             <ol class="list7 list9">
                               <li>실험실창업탐색팀 공모<br>
                                 권역별 실험실창업혁신단을 통하여 실험실창업탐색팀 공모
@@ -497,7 +602,9 @@
                             </ol>
                           </li>
                           <li>
-                            <p class="stepImg8"></p>
+                            <p class="stepImg8">
+                              <img src="img/step12.png" alt="">
+                            </p>
                           </li>
                           <li class="clear">
                             <ol class="list7 list9">
@@ -512,14 +619,14 @@
                             </ol>
                           </li>
                           <li>
-                            <p class="stepImg9"></p>
+                            <p class="stepImg9">
+                              <img src="img/step13.png" alt="">
+                            </p>
                           </li>
                           <li class="clear">
                             <span class="smTit4">유형별 참여자격</span>
                           </li>
-                          <li>
-                             <fieldset>
-                              <legend>유형별 참여자격</legend>
+                          <li style="overflow: hidden;">
                               <div class="tA6">
                                 <table  cellspacing="0" cellpadding="4px" width="100%">
                                   <colgroup>
@@ -544,7 +651,9 @@
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td class="td_blue10">창업지도자(PM)</td>
+                                      <td class="td_blue10">
+                                        <span>창업지도자(PM)</span>
+                                      </td>
                                       <td class="td_blue9">
                                         <span>
                                           EL 소속 대학의 창업교육센터, 산학협력단, 기술사업화센터, 기술지주회사 등 실험실창업 업무를<br>
@@ -553,14 +662,18 @@
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td class="td_blue10">실험실창업 캠프</td>
+                                      <td class="td_blue10">
+                                        <span>실험실창업 캠프</span>
+                                      </td>
                                       <td class="td_blue9">
                                         <span>참가자 간 창업 인적 네트워크 구축을   지원하고<BR>
                                           창업 아이템에 대한 비즈니스 모델을 향상시킬 수 있는 기회 제공</span>
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td class="td_blue10">기술지도교수(PI)</td>
+                                      <td class="td_blue10">
+                                        <span>기술지도교수(PI)</span>
+                                      </td>
                                       <td class="td_blue9">
                                         <span>
                                           실험실창업탐색팀 연구실의 기술 및 노하우를 제공하였거나 향후 제공하고자 하는 대학교수
@@ -571,7 +684,6 @@
                                 </table>
                                 <!--table-->
                               </div>
-                            </fieldset>
                             <!--.tA6-->
                           </li>
                           <li class="clear">
@@ -580,9 +692,7 @@
                               </li>
                             </ol>
                           </li>
-                          <li>
-                            <fieldset>
-                              <legend>지원내용</legend>
+                          <li style="overflow: hidden;">
                               <div class="tA6">
                                 <table  cellspacing="0" cellpadding="4px" width="100%">
                                   <colgroup>
@@ -605,14 +715,17 @@
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td class="td_blue8">시제품제작 및 창업활동비 지급
+                                      <td class="td_blue8">
+                                        <span>시제품제작 및 창업활동비 지급</span>
                                       </td>
                                       <td class="td_blue9">
                                         2000만원~2500만원 내
                                       </td>
                                     </tr>
                                     <tr>
-                                      <td class="td_blue8">비즈니스 모델 설계, 멘토링 등</td>
+                                      <td class="td_blue8">
+                                        <span>비즈니스 모델 설계, 멘토링 등</span>
+                                      </td>
                                       <td class="td_blue9">
                                         그 외 팀의 요청 및 필요에 따라 개별적으로 시행
                                       </td>
@@ -622,7 +735,7 @@
                                 <!--table-->
                               </div>
                               <!--.tA5-->
-                            </fieldset>
+
                           </li>
                           <li class="clear">
                             <ol class="list7 list9">

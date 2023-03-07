@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/headfoot.css">
   <link rel="stylesheet" href="css/sub.css">
+  <link rel="stylesheet" href="css/sub_mobile.css">
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
 </head>
@@ -16,7 +17,10 @@
     <form name="" action="" method="">
       <header id=header>
         <div class="sch">
-          <h1 class="potal"><a href="index.html">CBNU STARTUP – PORTAL</a></h1>
+          <h1 class="potal">
+            <a href="index.html">CBNU STARTUP – PORTAL</a>
+          </h1>
+          <h1 class="mlogo"><a href="index.html">로고</a></h1>
           <div class="search">
             <label for="search">검색</label>
             <input type="text" id="search" placeholder="검색어를 입력하세요." >
@@ -29,6 +33,88 @@
           <button type="button" class="menubar open1">
             <span>menubar</span>
           </button>
+          <button type="button" class="mMenubar open2">
+            <span>menubar</span>
+          </button>
+          <div id="mGnb" class="mobileWrap">
+            <div class="mMenuhead">
+              <a href="index.html" class="home"></a>
+              <a href="#" class="close2">닫기</a>
+              <div>
+                <div>loginperson</div>
+                <p>로그인해주세요</p>
+              </div>
+            </div>
+            <ul class="menuWrap clear">
+              <li class="has-sub">
+                <a href="#">안내</a>
+                <button type="button">열기</button>
+                <ul>
+                  <li><a href="sub_intro.html"><span>인사말</span></a></li>
+                  <li><a href="sub_vision.html"><span>비전</span></a></li>
+                  <li><a href="sub_org.html"><span>부서안내</span></a></li>
+                  <li><a href="sub_cal.html"><span>창업캘린더</span></a></li>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a href="#">창업친화적제도</a>
+                <button type="button">열기</button>
+                <ul>  
+                  <li>
+                    <a href="sub_Tsystem.html">
+                      <span>교원 창업친화적 인사제도</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="sub_Ssystem.html">
+                      <span>학생 창업친화적 학사제도</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a href="#">창업대체학점인정제 이수지원</a>
+                <button type="button">열기</button>
+                <ul>   
+                  <li>
+                    <a href="sub_sup1.html">
+                      <span>창업대체학점인정제 이수신청</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="sub_sup2.html">
+                      <span>창업대체학점인정제  
+                        이수인정 서류제출</span>
+                    </a>
+                  </li>    
+                </ul>
+              </li>
+              <li class="has-sub"><a href="#">창업지원</a>
+                <button type="button">열기</button>
+                <ul>
+                  <li><a href="sub_pgrm1.html"><span>실험실창업지원</span></a></li>
+                    <!-- <li><a href="sub_pgrm2.html"><span>창업아이템 사업화<br>지원사업</span></a></li> -->
+                    <li><a href="sub_pgrm4.html"><span>LINC사업단</span></a></li>
+                    <li><a href="sub_pgrm5.html"><span>이노폴리스캠퍼스 사업(강소특구지원사업)</span></a></li>
+                    <li><a href="sub_pgrm6.html"><span>소프트웨어중심대학사업단</span></a></li>
+                    <li><a href="sub_pgrm7.html"><span>창업동아리</span></a></li>     
+                </ul>
+              </li>
+              <li class="has-sub"><a href="#">창업교육</a>
+                <button type="button">열기</button>
+                <ul>
+                  <li>
+                    <a href="sub_pgrm3.html"><span>창업강좌</span></a>
+                  </li>
+                  <li><a href="https://cbnusos.com/guide/8"><span>일반인 창업강좌</span></a></li>
+                </ul>
+              </li>
+              <li class="has-sub"><a href="#">창업상담</a></li>
+              <li class="has-sub"><a href="#">공지사항</a></li>
+            </ul>     
+            <div class="loginBox">로그인</div>
+           </div>
+          <!--.mobileWrap-->
         </div>
         <!--.sch-->
       <div class="navBox">
@@ -112,8 +198,6 @@
               </ul>
           </nav>
           <!--nav-->
-        <!-- </div> -->
-        <!--.inner-->
         <div class="leftWrap">
           <a href="#" class="close1">닫기</a>
             <ul class="mgnb clear">
@@ -188,7 +272,7 @@
         <!--.leftWrap-->
       </div>
       <!--.navBox-->
-    </header>
+      </header>
     <!--#header-->
     <div class="subSkin bg1"> 
     </div>
@@ -205,47 +289,47 @@
       <aside id="mb_lnb">
         <ul>
           <li class="depth1">
-            
-            <button type="button">센터소개</button>
+            <button type="button">안내</button>
             <ul style="display: none;">
               <li class="on">
-                <a href="#">센터소개</a>
+                <a href="#">안내</a>
               </li>
               <li>
-                <a href="#">대학교육혁신</a>
+                <a href="#">창업친화적제도</a>
               </li>
               <li>
-                <a href="#">핵심분야</a>
+                <a href="#">
+                  <span>창업대체학점인정제<br>이수지원</span>
+                </a>
               </li>
               <li>
-                <a href="#">알림마당</a>
+                <a href="#">창업지원</a>
               </li>
               <li>
-                <a href="#">커뮤니티</a>
+                <a href="#">창업교육</a>
               </li>
-             
+              <li>
+                <a href="#">창업상담</a>
+              </li>
+              <li>
+                <a href="#">공지사항</a>
+              </li>
            </ul>
           </li>
           <li class="depth2">
-            <button type="button">센터소개</button>
+            <button type="button">안내</button>
             <ul style="display: none;">
-              <li>
-                    <a href="sub_intro.html">인사말</a>
-              </li>
               <li class="on">
-                    <a href="sub_imp.html">비전 및 목표</a>
+                <a href="sub_intro.html"><span>인사말</span></a>
               </li>
               <li>
-                <a href="sub_core.html">핵심분야</a>
+                <a href="sub_vision.html"><span>비전</span></a>
               </li>
               <li>
-                <a href="sub_ci.html">CI소개</a>
+                <a href="sub_org.html"><span>부서안내</span></a>
               </li>
               <li>
-                <a href="sub_org.html">조직도</a>
-              </li>
-              <li>
-                <a href="sub_map.html">오시는 길</a>
+                <a href="sub_cal.html"><span>창업캘린더</span></a>
               </li>
            </ul>
           </li>
@@ -284,17 +368,16 @@
               </p>
               <!--.hello_01-->
               <p class="hello_02">
-                2020년에 설립되어 실험실 특화 창업선도대학사업단사업을 시작으로<br> 
-                교내 창업 역량을 강화하기 위한 노력을 해오고 있습니다.<br> 
-                창업 친화적 학사제도 개편과 함께 창업 관련 교과목을 개설하고,<br> 
-                창업동아리 지원, 창업캠프 등의 다양한 창업지원 프로그램도 운영하고 있습니다.<br> 
-                창업지원센터는 대학 내 지속 가능한 창업 활동이 이루어질 수 있도록<br> 
-                창업지원 통합 인프라 구축하여 교내외 창업 관련 정보를 한 곳에 모아<br> 
-                창업자로 하여금 정보를 손쉽게 확인하고,<br> 
-                활용할 수 있도록 지원하는 것에 최선을 다할 것입니다.<br> 
-                또한, 학생 및 교원(예비)창업자의 창업과정에<br> 
-                인적, 물적 창업 인프라를 더욱 튼튼히 마련하여 새로운 미래를 여는데 기여하고자 합니다.<br>
-
+                <span>2020년에 설립되어 실험실 특화 창업선도대학사업단사업을 시작으로</span>
+                <span>교내 창업 역량을 강화하기 위한 노력을 해오고 있습니다.</span>
+                <span>창업 친화적 학사제도 개편과 함께 창업 관련 교과목을 개설하고,</span>
+                <span>창업동아리 지원, 창업캠프 등의 다양한 창업지원 프로그램도 운영하고 있습니다.</span>
+                <span>창업지원센터는 대학 내 지속 가능한 창업 활동이 이루어질 수 있도록</span>
+                <span>창업지원 통합 인프라 구축하여 교내외 창업 관련 정보를 한 곳에 모아</span>
+                <span>창업자로 하여금 정보를 손쉽게 확인하고,</span>
+                <span>활용할 수 있도록 지원하는 것에 최선을 다할 것입니다.</span>
+                <span>또한, 학생 및 교원(예비)창업자의 창업과정에</span>
+                <span>인적, 물적 창업 인프라를 더욱 튼튼히 마련하여 새로운 미래를 여는데 기여하고자 합니다.</span>
                 <span>감사합니다.</span>
               </p>
               <!--.hello_02-->

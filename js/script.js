@@ -17,6 +17,52 @@ $(document).ready(function(){
 		$(".leftWrap").animate({"right" : "-100%"}, 500);
 	});
 	});
+//mMenubar
+$(document).ready(function(){
+		$(".open2").click(function(){
+			$(".mobileWrap").animate({"right":"0"},500,"swing");});
+		$(".close2").click(function(){
+			$(".mobileWrap").animate({"right" : "-100%"}, 500);
+		});
+		});
+//모바일메뉴왼쪽메뉴 펼치기
+$(document).ready(function(){//시작
+			$('.mobileWrap li.has-sub > button').on('click', function(){
+				//$(this).removeAttr('href');
+				var element = $(this).parent('li');
+				if (element.hasClass('open')) {
+					element.removeClass('open');
+					element.find('li').removeClass('open');
+					element.find('ul').slideUp('fast');
+				}
+				else {
+					element.addClass('open');
+					element.children('ul').slideDown('fast');
+					// element.siblings('li').children('ul').slideUp('fast');
+					element.siblings('li').removeClass('open');
+					element.siblings('li').find('li').removeClass('open');
+					// element.siblings('li').find('ul').slideUp('fast');
+				}
+				return false;
+			});
+			});//끝
+/* 모바일 서브메뉴 */
+$(document).ready(function(){
+	$('#mb_lnb li button').click(function(){
+		$('#mb_lnb li button').removeClass('on');
+		$('#mb_lnb li ul').slideUp('fast');
+		if($('+ul',this).is(':hidden')){
+			$(this).addClass('on').next().slideDown('fast');
+		}else{
+			$(this).removeClass('on').next().slideUp('fast');
+		}
+		return false;
+	});
+	$('*:not("#mb_lnb li button")').click(function(){
+		$('#mb_lnb li button').removeClass('on');
+		$('#mb_lnb li ul').slideUp('fast');
+	});
+	});
 	//교원탭
 	$(document).ready(function(){
 		$('div.t_board ul.tab li a').on('click', function (e) {
@@ -46,27 +92,8 @@ $(document).ready(function(){
       $(".display2").toggle();
     });
     });//끝
-		//창업강좌 왼쪽메뉴 펼치기
-		// $(document).ready(function(){//시작
-		// 	$('.menuWrap li.has-sub > button').on('click', function(){
-		// 		//$(this).removeAttr('href');
-		// 		var element = $(this).parent('li');
-		// 		if (element.hasClass('open')) {
-		// 			element.removeClass('open');
-		// 			element.find('li').removeClass('open');
-		// 			element.find('ul').slideUp('fast');
-		// 		}
-		// 		else {
-		// 			element.addClass('open');
-		// 			element.children('ul').slideDown('fast');
-		// 			// element.siblings('li').children('ul').slideUp('fast');
-		// 			element.siblings('li').removeClass('open');
-		// 			element.siblings('li').find('li').removeClass('open');
-		// 			// element.siblings('li').find('ul').slideUp('fast');
-		// 		}
-		// 		return false;
-		// 	});
-		// 	});//끝
+		
+		
 			//창업강좌 토글
 	$(document).ready(function(){//시작
     $(".toggle-btn").click(function(){
@@ -370,5 +397,7 @@ $(document).ready(function(){
 			}(jQuery, window, document));
 				
 			});//끝
+
+
 
 	

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/headfoot.css">
   <link rel="stylesheet" href="css/sub.css">
+  <link rel="stylesheet" href="css/sub_mobile.css">
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
 </head>
@@ -16,7 +17,10 @@
     <form name="" action="" method="">
       <header id=header>
         <div class="sch">
-          <h1 class="potal"><a href="index.html">CBNU STARTUP – PORTAL</a></h1>
+          <h1 class="potal">
+            <a href="index.html">CBNU STARTUP – PORTAL</a>
+          </h1>
+          <h1 class="mlogo"><a href="index.html">로고</a></h1>
           <div class="search">
             <label for="search">검색</label>
             <input type="text" id="search" placeholder="검색어를 입력하세요." >
@@ -29,6 +33,88 @@
           <button type="button" class="menubar open1">
             <span>menubar</span>
           </button>
+          <button type="button" class="mMenubar open2">
+            <span>menubar</span>
+          </button>
+          <div id="mGnb" class="mobileWrap">
+            <div class="mMenuhead">
+              <a href="index.html" class="home"></a>
+              <a href="#" class="close2">닫기</a>
+              <div>
+                <div>loginperson</div>
+                <p>로그인해주세요</p>
+              </div>
+            </div>
+            <ul class="menuWrap clear">
+              <li class="has-sub">
+                <a href="#">안내</a>
+                <button type="button">열기</button>
+                <ul>
+                  <li><a href="sub_intro.html"><span>인사말</span></a></li>
+                  <li><a href="sub_vision.html"><span>비전</span></a></li>
+                  <li><a href="sub_org.html"><span>부서안내</span></a></li>
+                  <li><a href="sub_cal.html"><span>창업캘린더</span></a></li>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a href="#">창업친화적제도</a>
+                <button type="button">열기</button>
+                <ul>  
+                  <li>
+                    <a href="sub_Tsystem.html">
+                      <span>교원 창업친화적 인사제도</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="sub_Ssystem.html">
+                      <span>학생 창업친화적 학사제도</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a href="#">창업대체학점인정제 이수지원</a>
+                <button type="button">열기</button>
+                <ul>   
+                  <li>
+                    <a href="sub_sup1.html">
+                      <span>창업대체학점인정제 이수신청</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="sub_sup2.html">
+                      <span>창업대체학점인정제  
+                        이수인정 서류제출</span>
+                    </a>
+                  </li>    
+                </ul>
+              </li>
+              <li class="has-sub"><a href="#">창업지원</a>
+                <button type="button">열기</button>
+                <ul>
+                  <li><a href="sub_pgrm1.html"><span>실험실창업지원</span></a></li>
+                    <!-- <li><a href="sub_pgrm2.html"><span>창업아이템 사업화<br>지원사업</span></a></li> -->
+                    <li><a href="sub_pgrm4.html"><span>LINC사업단</span></a></li>
+                    <li><a href="sub_pgrm5.html"><span>이노폴리스캠퍼스 사업(강소특구지원사업)</span></a></li>
+                    <li><a href="sub_pgrm6.html"><span>소프트웨어중심대학사업단</span></a></li>
+                    <li><a href="sub_pgrm7.html"><span>창업동아리</span></a></li>     
+                </ul>
+              </li>
+              <li class="has-sub"><a href="#">창업교육</a>
+                <button type="button">열기</button>
+                <ul>
+                  <li>
+                    <a href="sub_pgrm3.html"><span>창업강좌</span></a>
+                  </li>
+                  <li><a href="https://cbnusos.com/guide/8"><span>일반인 창업강좌</span></a></li>
+                </ul>
+              </li>
+              <li class="has-sub"><a href="#">창업상담</a></li>
+              <li class="has-sub"><a href="#">공지사항</a></li>
+            </ul>     
+            <div class="loginBox">로그인</div>
+           </div>
+          <!--.mobileWrap-->
         </div>
         <!--.sch-->
       <div class="navBox">
@@ -112,8 +198,6 @@
               </ul>
           </nav>
           <!--nav-->
-        <!-- </div> -->
-        <!--.inner-->
         <div class="leftWrap">
           <a href="#" class="close1">닫기</a>
             <ul class="mgnb clear">
@@ -188,7 +272,7 @@
         <!--.leftWrap-->
       </div>
       <!--.navBox-->
-    </header>
+      </header>
     <!--#header-->
     <div class="subSkin bg4"> 
     </div>
@@ -205,47 +289,54 @@
       <aside id="mb_lnb">
         <ul>
           <li class="depth1">
-            
-            <button type="button">센터소개</button>
+            <button type="button">창업지원</button>
             <ul style="display: none;">
+              <li>
+                <a href="#">안내</a>
+              </li>
+              <li>
+                <a href="#">창업친화적제도</a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>창업대체학점인정제<br>이수지원</span>
+                </a>
+              </li>
               <li class="on">
-                <a href="#">센터소개</a>
+                <a href="#">창업지원</a>
               </li>
               <li>
-                <a href="#">대학교육혁신</a>
+                <a href="#">창업교육</a>
               </li>
               <li>
-                <a href="#">핵심분야</a>
+                <a href="#">창업상담</a>
               </li>
               <li>
-                <a href="#">알림마당</a>
+                <a href="#">공지사항</a>
               </li>
-              <li>
-                <a href="#">커뮤니티</a>
-              </li>
-             
            </ul>
           </li>
           <li class="depth2">
-            <button type="button">센터소개</button>
+            <button type="button">창업지원</button>
             <ul style="display: none;">
               <li>
-                    <a href="sub_intro.html">인사말</a>
+                <a href="sub_pgrm1.html">실험실창업지원</a>
+              </li>
+              <li>
+                <a href="sub_pgrm4.html">LINC사업단</a>
               </li>
               <li class="on">
-                    <a href="sub_imp.html">비전 및 목표</a>
+                <a href="sub_pgrm5.html">
+                  <span>이노폴리스캠퍼스 사업<br>(강소특구지원사업)</span>
+                </a>
               </li>
               <li>
-                <a href="sub_core.html">핵심분야</a>
+                <a href="sub_pgrm6.html">
+                  <span>소프트웨어중심대학<br>사업단</span>
+                </a>
               </li>
               <li>
-                <a href="sub_ci.html">CI소개</a>
-              </li>
-              <li>
-                <a href="sub_org.html">조직도</a>
-              </li>
-              <li>
-                <a href="sub_map.html">오시는 길</a>
+                <a href="sub_pgrm7.html">창업동아리</a>
               </li>
            </ul>
           </li>
@@ -263,13 +354,6 @@
           <li class="has-sub">
             <a href="sub_pgrm1.html">실험실창업지원</a>
           </li>
-          <!-- <li class="has-sub">
-            <a href="sub_pgrm2.html">
-              <span>
-                창업아이템 사업화<br>지원사업
-              </span>
-            </a>
-          </li> -->
           <li class="has-sub">
             <a href="sub_pgrm4.html">LINC사업단</a>
           </li>
@@ -295,7 +379,7 @@
             <ul>
               <li>
                 <span class="bigTit">사업개요</span>
-                <ul>
+                <ul class="mtop">
                   <li>
                     <span class="smTit">사업목적</span>
                     <ol class="list2">
@@ -322,7 +406,9 @@
                   </li>
                   <li>
                     <span class="smTit">이노폴리스캠퍼스 추진 프로세스</span>
-                    <p class="stepImg2"></p>
+                    <p class="stepImg2">
+                      <img src="img/step6.png" alt="">
+                    </p>
                   </li>
                   <li>
                     <span class="smTit">주요 지원내용</span>

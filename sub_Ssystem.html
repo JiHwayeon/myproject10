@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/headfoot.css">
   <link rel="stylesheet" href="css/sub.css">
+  <link rel="stylesheet" href="css/sub_mobile.css">
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
 </head>
@@ -16,7 +17,10 @@
     <form name="" action="" method="">
       <header id=header>
         <div class="sch">
-          <h1 class="potal"><a href="index.html">CBNU STARTUP – PORTAL</a></h1>
+          <h1 class="potal">
+            <a href="index.html">CBNU STARTUP – PORTAL</a>
+          </h1>
+          <h1 class="mlogo"><a href="index.html">로고</a></h1>
           <div class="search">
             <label for="search">검색</label>
             <input type="text" id="search" placeholder="검색어를 입력하세요." >
@@ -29,6 +33,88 @@
           <button type="button" class="menubar open1">
             <span>menubar</span>
           </button>
+          <button type="button" class="mMenubar open2">
+            <span>menubar</span>
+          </button>
+          <div id="mGnb" class="mobileWrap">
+            <div class="mMenuhead">
+              <a href="index.html" class="home"></a>
+              <a href="#" class="close2">닫기</a>
+              <div>
+                <div>loginperson</div>
+                <p>로그인해주세요</p>
+              </div>
+            </div>
+            <ul class="menuWrap clear">
+              <li class="has-sub">
+                <a href="#">안내</a>
+                <button type="button">열기</button>
+                <ul>
+                  <li><a href="sub_intro.html"><span>인사말</span></a></li>
+                  <li><a href="sub_vision.html"><span>비전</span></a></li>
+                  <li><a href="sub_org.html"><span>부서안내</span></a></li>
+                  <li><a href="sub_cal.html"><span>창업캘린더</span></a></li>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a href="#">창업친화적제도</a>
+                <button type="button">열기</button>
+                <ul>  
+                  <li>
+                    <a href="sub_Tsystem.html">
+                      <span>교원 창업친화적 인사제도</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="sub_Ssystem.html">
+                      <span>학생 창업친화적 학사제도</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-sub">
+                <a href="#">창업대체학점인정제 이수지원</a>
+                <button type="button">열기</button>
+                <ul>   
+                  <li>
+                    <a href="sub_sup1.html">
+                      <span>창업대체학점인정제 이수신청</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="sub_sup2.html">
+                      <span>창업대체학점인정제  
+                        이수인정 서류제출</span>
+                    </a>
+                  </li>    
+                </ul>
+              </li>
+              <li class="has-sub"><a href="#">창업지원</a>
+                <button type="button">열기</button>
+                <ul>
+                  <li><a href="sub_pgrm1.html"><span>실험실창업지원</span></a></li>
+                    <!-- <li><a href="sub_pgrm2.html"><span>창업아이템 사업화<br>지원사업</span></a></li> -->
+                    <li><a href="sub_pgrm4.html"><span>LINC사업단</span></a></li>
+                    <li><a href="sub_pgrm5.html"><span>이노폴리스캠퍼스 사업(강소특구지원사업)</span></a></li>
+                    <li><a href="sub_pgrm6.html"><span>소프트웨어중심대학사업단</span></a></li>
+                    <li><a href="sub_pgrm7.html"><span>창업동아리</span></a></li>     
+                </ul>
+              </li>
+              <li class="has-sub"><a href="#">창업교육</a>
+                <button type="button">열기</button>
+                <ul>
+                  <li>
+                    <a href="sub_pgrm3.html"><span>창업강좌</span></a>
+                  </li>
+                  <li><a href="https://cbnusos.com/guide/8"><span>일반인 창업강좌</span></a></li>
+                </ul>
+              </li>
+              <li class="has-sub"><a href="#">창업상담</a></li>
+              <li class="has-sub"><a href="#">공지사항</a></li>
+            </ul>     
+            <div class="loginBox">로그인</div>
+           </div>
+          <!--.mobileWrap-->
         </div>
         <!--.sch-->
       <div class="navBox">
@@ -112,8 +198,6 @@
               </ul>
           </nav>
           <!--nav-->
-        <!-- </div> -->
-        <!--.inner-->
         <div class="leftWrap">
           <a href="#" class="close1">닫기</a>
             <ul class="mgnb clear">
@@ -188,7 +272,7 @@
         <!--.leftWrap-->
       </div>
       <!--.navBox-->
-    </header>
+      </header>
     <!--#header-->
     <div class="subSkin bg2"> 
     </div>
@@ -205,47 +289,45 @@
       <aside id="mb_lnb">
         <ul>
           <li class="depth1">
-            
-            <button type="button">센터소개</button>
+            <button type="button"><span>창업친화적제도</span></button>
             <ul style="display: none;">
+              <li>
+                <a href="#">안내</a>
+              </li>
               <li class="on">
-                <a href="#">센터소개</a>
+                <a href="#">창업친화적제도</a>
               </li>
               <li>
-                <a href="#">대학교육혁신</a>
+                <a href="#">
+                  <span>창업대체학점인정제<br>이수지원</span>
+                </a>
               </li>
               <li>
-                <a href="#">핵심분야</a>
+                <a href="#">창업지원</a>
               </li>
               <li>
-                <a href="#">알림마당</a>
+                <a href="#">창업교육</a>
               </li>
               <li>
-                <a href="#">커뮤니티</a>
+                <a href="#">창업상담</a>
               </li>
-             
+              <li>
+                <a href="#">공지사항</a>
+              </li>
            </ul>
           </li>
           <li class="depth2">
-            <button type="button">센터소개</button>
+            <button type="button"><span>창업친화적제도</span></button>
             <ul style="display: none;">
               <li>
-                    <a href="sub_intro.html">인사말</a>
+                <a href="sub_Tsystem.html">
+                  <span>교원 창업친화적<br>인사제도</span>
+                </a>
               </li>
               <li class="on">
-                    <a href="sub_imp.html">비전 및 목표</a>
-              </li>
-              <li>
-                <a href="sub_core.html">핵심분야</a>
-              </li>
-              <li>
-                <a href="sub_ci.html">CI소개</a>
-              </li>
-              <li>
-                <a href="sub_org.html">조직도</a>
-              </li>
-              <li>
-                <a href="sub_map.html">오시는 길</a>
+                <a href="sub_Ssystem.html">
+                  <span>학생 창업친화적<br>학사제도</span>
+                </a>
               </li>
            </ul>
           </li>
@@ -281,22 +363,20 @@
             <ul class="plan">
               <li class="i1">
                   <p class="point"><span>창업대체학점인정제</span>란?</p>
-                  <p class="txt">
-                    창업과 학업의 병행에 따른 어려움을 해소하여 창업으로 인한 학업중단을 최소화하기 위하여<br>
+                  <p class="txt txt4">
+                    <span>창업과 학업의 병행에 따른 어려움을 해소하여 창업으로 인한 학업중단을 최소화하기 위하여</span>
                     창업 준비활동 또는 창업을 통해 학습목표의 달성이 가능한 경우에는 이를 학점으로 대체 인정하는 제도</p>
               </li>
               <li class="i10">
                 <p class="point">교과목 및 자격요건</p>
                 <div>
-                  <fieldset>
-                    <legend>자격요건</legend>
                     <div class="tA">
                       <table  cellspacing="0" cellpadding="4px" width="100%">
                         <colgroup>
-                            <col width="26%">
-                            <col width="8%">
+                            <col width="23%">
+                            <col width="14%">
                             <col width="27%">
-                            <col width="39%">
+                            <col width="36%">
                         </colgroup>
                         <thead>
                           <th class="td_blue big" colspan="2">구분</th>
@@ -329,20 +409,17 @@
                       <!--table-->
                     </div>
                     <!--.tA-->
-                 </fieldset>
                 </div> 
             </li>
-            <li class="i11">
+            <li class="i11 i30">
                 <p class="point">신청서류</p>
                 <div>
-                  <fieldset>
-                    <legend>신청서류</legend>
                     <div class="tA">
                       <table  cellspacing="0" cellpadding="4px" width="100%">
                         <colgroup>
-                            <col width="25%">
-                            <col width="30%">
-                            <col width="45%">
+                            <col width="20%">
+                            <col width="28%">
+                            <col width="52%">
                         </colgroup>
                         <thead>
                           <th class="td_blue big" colspan="2">교과목명</th>
@@ -370,22 +447,25 @@
                               <span>대학원<br>
                                 창업실습</span>
                             </td>
-                            <td class="td_blue">창업실습의 이해</td>
+                            <td class="td_blue">
+                              <span>창업실습의 이해</span>
+                            </td>
                           </tr>
                           <tr>
-                            <td class="td_blue">창업현장실습의 이해</td>
+                            <td class="td_blue">
+                              <span>창업현장실습의 이해</span>
+                            </td>
                           </tr>
                         </tbody>
                       </table>
                       <!--table-->
                     </div>
                     <!--.tA-->
-                 </fieldset>
                 </div> 
             </li>
-            <li class="i12">
+            <li class="i12 i31">
               <p class="point">성적평가</p>
-              <p class="txt">제출서류를 통해 성적 <span>Pass</span> or <span>Fail</span> 평가</p> 
+              <p class="txt txt3">제출서류를 통해 성적 <span>Pass</span> or <span>Fail</span> 평가</p> 
               <ul class="kind2 clear">
                 <li>
                   <span>수강 중</span>
@@ -401,7 +481,7 @@
                 </li>
               </ul>
             </li>
-            <li class="i13">
+            <li class="i13 i32">
               <p class="point">절차</p>
               <ul class="kind3 clear">
                 <li>
@@ -436,20 +516,23 @@
             <ul class="plan">
               <li class="i1">
                   <p class="point"><span>창업학점교류제</span>란?</p>
-                  <p class="txt">학생들에게 다양한 창업강좌 수강의 기회를 제공하기 위하여<br> 
+                  <p class="txt txt4">
+                    <span>학생들에게 다양한 창업강좌 수강의 기회를 제공하기 위하여</span>
                     우리 대학과 창업학점 교류협정을 체결한 대학의 창업강좌 상호 수강 및 학점을 인정하는 제도</p>
               </li>
               <li class="i14">
                 <p class="point">교류협정대학</p>
-                <p class="txt">-강원대, 인천대</p> 
+                <p class="txt txt2">-강원대, 인천대</p> 
             </li>
             <li class="i3">
                 <p class="point">제출자료</p>
-                <p class="txt">학점교류신청서</p> 
+                <p class="txt txt2">학점교류신청서</p> 
             </li>
             <li class="i15">
                 <p class="point">절차</p>
-                <p class="stepImg"></p> 
+                <p class="stepImg">
+                  
+                </p> 
             </li>
             </ul>
           </div>
@@ -463,8 +546,6 @@
               <li class="i16">
                 <p class="point">자격요건 및 제출서류</p>
                 <div>
-                  <fieldset>
-                    <legend>제출서류</legend>
                     <div class="tA">
                       <table  cellspacing="0" cellpadding="4px" width="100%">
                         <colgroup>
@@ -479,7 +560,9 @@
                         </thead>
                         <tbody>
                           <tr>
-                            <td class="td_blue">학부생</td>
+                            <td class="td_blue">
+                              <span>학부생</span>
+                            </td>
                             <td class="td_blue5">전공(다전공)과 관련된 분야의 실제 창업활동을 하는<br> 
                               대표인자(공동대표 및 등기이사)로서<br> 
                               아래 요건 중 한가지 이상 충족하는 자<br>
@@ -500,7 +583,9 @@
                               (해당자)사회적 기업 인증서</td>
                           </tr>
                           <tr>
-                            <td class="td_blue">대학원생</td>
+                            <td class="td_blue">
+                              <span>대학원생</span>
+                            </td>
                             <td class="td_blue5">전공과 관련된 분야의 실제 창업활동을 하는<br> 
                               대표인자(공동대표 및 등기이사)로서<br> 
                               아래의 요건 모두 충족하는 자<br>
@@ -523,10 +608,9 @@
                       <!--table-->
                     </div>
                     <!--.tA-->
-                 </fieldset>
                 </div> 
             </li>
-            <li class="i17">
+            <li class="i17 i33">
                 <p class="point">절차</p>
                 <p class="stepImg"></p>
             </li>

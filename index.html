@@ -5,24 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>충북대학교 창업지원센터</title>
-  <!-- <link rel="stylesheet" href="css/jquery.fullPage.css"> -->
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
-  <!-- <link rel="stylesheet" href="css/customFullpage.css"> -->
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/headfoot.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/jquery-3.2.1.min.js"></script>
-  <!-- <script src="js/jquery.fullPage.js"></script> -->
   <script src="js/slick.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
   <script src="js/pagescript.js"></script>
   <script src="js/script.js"></script>
 </head>
 <body>
   <main id="fullpage"> 
-    <section class="section" id="bg">ㅠ
+    <section class="section" id="bg">
       <header id=header>
           <div class="sch">
-            <h1 class="potal"><a href="index.html">CBNU STARTUP – PORTAL</a></h1>
+            <h1 class="potal">
+              <a href="index.html">CBNU STARTUP – PORTAL</a>
+            </h1>
+            <h1 class="mlogo"><a href="index.html">로고</a></h1>
             <div class="search">
               <label for="search">검색</label>
               <input type="text" id="search" placeholder="검색어를 입력하세요." >
@@ -35,6 +38,88 @@
             <button type="button" class="menubar open1">
               <span>menubar</span>
             </button>
+            <button type="button" class="mMenubar open2">
+              <span>menubar</span>
+            </button>
+            <div id="mGnb" class="mobileWrap">
+              <div class="mMenuhead">
+                <a href="index.html" class="home"></a>
+                <a href="#" class="close2">닫기</a>
+                <div>
+                  <div>loginperson</div>
+                  <p>로그인해주세요</p>
+                </div>
+              </div>
+              <ul class="menuWrap clear">
+                <li class="has-sub">
+                  <a href="#">안내</a>
+                  <button type="button">열기</button>
+                  <ul>
+                    <li><a href="sub_intro.html"><span>인사말</span></a></li>
+                    <li><a href="sub_vision.html"><span>비전</span></a></li>
+                    <li><a href="sub_org.html"><span>부서안내</span></a></li>
+                    <li><a href="sub_cal.html"><span>창업캘린더</span></a></li>
+                  </ul>
+                </li>
+                <li class="has-sub">
+                  <a href="#">창업친화적제도</a>
+                  <button type="button">열기</button>
+                  <ul>  
+                    <li>
+                      <a href="sub_Tsystem.html">
+                        <span>교원 창업친화적 인사제도</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="sub_Ssystem.html">
+                        <span>학생 창업친화적 학사제도</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-sub">
+                  <a href="#">창업대체학점인정제 이수지원</a>
+                  <button type="button">열기</button>
+                  <ul>   
+                    <li>
+                      <a href="sub_sup1.html">
+                        <span>창업대체학점인정제 이수신청</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="sub_sup2.html">
+                        <span>창업대체학점인정제  
+                          이수인정 서류제출</span>
+                      </a>
+                    </li>    
+                  </ul>
+                </li>
+                <li class="has-sub"><a href="#">창업지원</a>
+                  <button type="button">열기</button>
+                  <ul>
+                    <li><a href="sub_pgrm1.html"><span>실험실창업지원</span></a></li>
+                      <!-- <li><a href="sub_pgrm2.html"><span>창업아이템 사업화<br>지원사업</span></a></li> -->
+                      <li><a href="sub_pgrm4.html"><span>LINC사업단</span></a></li>
+                      <li><a href="sub_pgrm5.html"><span>이노폴리스캠퍼스 사업(강소특구지원사업)</span></a></li>
+                      <li><a href="sub_pgrm6.html"><span>소프트웨어중심대학사업단</span></a></li>
+                      <li><a href="sub_pgrm7.html"><span>창업동아리</span></a></li>     
+                  </ul>
+                </li>
+                <li class="has-sub"><a href="#">창업교육</a>
+                  <button type="button">열기</button>
+                  <ul>
+                    <li>
+                      <a href="sub_pgrm3.html"><span>창업강좌</span></a>
+                    </li>
+                    <li><a href="https://cbnusos.com/guide/8"><span>일반인 창업강좌</span></a></li>
+                  </ul>
+                </li>
+                <li class="has-sub"><a href="#">창업상담</a></li>
+                <li class="has-sub"><a href="#">공지사항</a></li>
+              </ul>     
+              <div class="loginBox">로그인</div>
+             </div>
+            <!--.mobileWrap-->
           </div>
           <!--.sch-->
         <div class="navBox">
@@ -118,8 +203,6 @@
                 </ul>
             </nav>
             <!--nav-->
-          <!-- </div> -->
-          <!--.inner-->
           <div class="leftWrap">
             <a href="#" class="close1">닫기</a>
               <ul class="mgnb clear">
@@ -197,45 +280,74 @@
       </header>
       <!--#header-->
      <!--        DISPLAY 5 ITENS        -->
-     <!--        DISPLAY 3 ITENS        -->
-<div class="slider-rotate" id="slider-2">
+    <div class="slider-rotate" id="slider-2">
 
-  <div class="slider-rotate__container banner-main">
+      <div class="slider-rotate__container banner-main">
 
-    <!-- ITENS -->
-    <div class="slider-rotate__item item">
-      <a href="#">
-        <img src="img/1.jpg">
-      </a>
-    </div>
-    <div class="slider-rotate__item item">
-      <a href="#">
-        <img src="img/2.jpg">
-      </a>
-    </div>
-    <div class="slider-rotate__item item">
-      <a href="#">
-        <img src="img/3.jpg">
-      </a>
-    </div>
-    <div class="slider-rotate__item item">
-      <a href="#">
-        <img src="img/4.jpg">
-      </a>
-    </div>
-    <div class="slider-rotate__item item">
-      <a href="#">
-        <img src="img/5.jpg">
-      </a>
-    </div>
-    <!-- NAVIGATION -->
-    <span class="slider-rotate__arrow slider-rotate__arrow--right js-slider-rotate-arrow" data-action="next"></span>
-    <span class="slider-rotate__arrow slider-rotate__arrow--left js-slider-rotate-arrow" data-action="prev"></span>
+        <!-- ITENS -->
+        <div class="slider-rotate__item item">
+          <a href="#">
+            <img src="img/1.jpg">
+          </a>
+        </div>
+        <div class="slider-rotate__item item">
+          <a href="#">
+            <img src="img/2.jpg">
+          </a>
+        </div>
+        <div class="slider-rotate__item item">
+          <a href="#">
+            <img src="img/3.jpg">
+          </a>
+        </div>
+        <div class="slider-rotate__item item">
+          <a href="#">
+            <img src="img/4.jpg">
+          </a>
+        </div>
+        <div class="slider-rotate__item item">
+          <a href="#">
+            <img src="img/5.jpg">
+          </a>
+        </div>
+        <!-- NAVIGATION -->
+        <span class="slider-rotate__arrow slider-rotate__arrow--right js-slider-rotate-arrow" data-action="next"></span>
+        <span class="slider-rotate__arrow slider-rotate__arrow--left js-slider-rotate-arrow" data-action="prev"></span>
 
-  </div>
+      </div>
 
-</div>
-      <!--#mySlide-->
+    </div>
+      <!--slider-rotate-->
+      <div id="visualWrap">
+        <div class="visual">
+          <div>
+            <a href="#">
+              <img src="img/1.jpg" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="img/1.jpg" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="img/1.jpg" alt="">
+            </a></div>
+          <div>
+            <a href="#">
+              <img src="img/1.jpg" alt="">
+            </a>
+          </div>
+          <div>
+            <a href="#">
+              <img src="img/1.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <!--.visual-->
+      </div> 
+      <!--#visualWrap-->
     </section>
     <!--.section-->
     <section class="section" id="bg1">
@@ -294,11 +406,28 @@
             </li>
             <li>
               <a href="#" class="tabcont2">
-                <img src="img/bg03.jpg" alt="">
+                <img src="img/bg02.jpg" alt="">
                 <b>충북대학교 창업지원단</b>
               </a>
             </li>
           </ul>
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">      
+                <a href="#">
+                  <img src="img/bg02.jpg" alt="이미지에 대한 설명">
+                  <b>충북대학교 창업지원단</b>               
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img src="img/bg02.jpg" alt="이미지에 대한 설명">
+                  <b>충북대학교 창업지원단</b>  
+                </a>
+              </div>      
+            </div>
+          </div>
+          <!--mySwiper1-->
         </div>
         <div class="tab_contents">
           <div class="notice">
@@ -423,6 +552,128 @@
             <!--.tA5-->
           </div>
           <!--.notice-->
+          <div class="mNotice">
+            <fieldset>
+              <legend>notice</legend>
+                <table  cellspacing="0" cellpadding="4px" width="100%">
+                  <colgroup>
+                      <col width="10%">
+                      <col width="20%">
+                      <col width="28%">
+                      <col width="22%">
+                      <col width="20%">
+                  </colgroup>
+                  <thead>
+                    <th>NO.</th>
+                    <th class="slc">
+                      <button type="button" class="toggle-btn">
+                        카테고리
+                        <img src="./img/menu_arrow.png">
+                      </button>
+                     <ul class="selectbox-option hide">
+                       <li><button type="button" class="option-btn">모집</button></li>
+                       <li><button type="button" class="option-btn">홍보</button></li>
+                       <li><button type="button" class="option-btn">안내</button></li>
+                       <li><button type="button" class="option-btn">서식</button></li>
+                     </ul>
+                    </th>
+                    <th>제목</th>
+                    <th>작성시간</th>
+                    <th>조회수</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="td_blue">
+                        1
+                      </td>
+                      <td class="td_blue t1">
+                        <strong>모집</strong>
+                      </td>
+                      <td class="td_blue">
+                        <span>충북대학교[2023년 연도등등등]등등등</span>
+                      </td>
+                      <td class="td_blue date">
+                        2023-01-02
+                      </td>
+                      <td class="td_blue inq">
+                        <img src="img/eye.png" alt=""><b>1875</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td_blue">
+                        2
+                      </td>
+                      <td class="td_blue t2">
+                        <strong>홍보</strong>
+                      </td>
+                      <td class="td_blue">
+                        <span>충북대학교[2023년 연도등등등]등등등</span>
+                      </td>
+                      <td class="td_blue date">
+                        2023-01-02
+                      </td>
+                      <td class="td_blue inq">
+                        <img src="img/eye.png" alt=""><b>1875</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td_blue">
+                        3
+                      </td>
+                      <td class="td_blue t2">
+                        <strong>홍보</strong>
+                      </td>
+                      <td class="td_blue">
+                        <span>충북대학교[2023년 연도등등등]등등등</span>
+                      </td>
+                      <td class="td_blue date">
+                        2023-01-02
+                      </td>
+                      <td class="td_blue inq">
+                        <img src="img/eye.png" alt=""><b>1875</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td_blue">
+                        4
+                      </td>
+                      <td class="td_blue t3">
+                        <strong>안내</strong>
+                      </td>
+                      <td class="td_blue">
+                        <span>충북대학교[2023년 연도등등등]등등등</span>
+                      </td>
+                      <td class="td_blue date">
+                        2023-01-02
+                      </td>
+                      <td class="td_blue inq">
+                        <img src="img/eye.png" alt=""><b>1875</b>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="td_blue">
+                        5
+                      </td>
+                      <td class="td_blue t4">
+                        <strong>서식</strong>
+                      </td>
+                      <td class="td_blue">
+                        <span>충북대학교[2023년 연도등등등]등등등</span>
+                      </td>
+                      <td class="td_blue date">
+                        2023-01-02
+                      </td>
+                      <td class="td_blue inq">
+                        <img src="img/eye.png" alt=""><b>1875</b>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!--table-->
+            </fieldset>
+            <!--.tA5-->
+          </div>
+          <!--.mNotice-->
         </div>
       </article>
       <!--#sec2-->
@@ -433,8 +684,9 @@
 				<h2 class="title">Start-Up Event</h2>
 		  </div>
       <article id="sec3">
-        <ul class="clear">
-          <li>
+        
+        <div class="eventBox" >
+          <div>
             <a href="#">
               <img src="img/art1.jfif" alt="">
               <div class="titBox">
@@ -446,10 +698,9 @@
                   <li>행사장소 :</li>
                 </ul>
               </div>
-              <!--.titBox-->
             </a>
-          </li>
-          <li>
+          </div>
+          <div>
             <a href="#">
               <img src="img/art2.jfif" alt="">
               <div class="titBox">
@@ -461,10 +712,9 @@
                   <li>행사장소 :</li>
                 </ul>
               </div>
-              <!--.titBox-->
             </a>
-          </li>
-          <li>
+          </div>
+          <div>
             <a href="#">
               <img src="img/art3.png" alt="">
               <div class="titBox">
@@ -477,10 +727,9 @@
                     <li>행사장소 :</li>
                   </ul>
               </div>
-              <!--.titBox-->
             </a>
-          </li>
-          <li>
+          </div>
+          <div>
             <a href="#">
               <img src="img/art4.jfif" alt="">
               <div class="titBox">
@@ -492,10 +741,15 @@
                   <li>행사장소 :</li>
                 </ul>
               </div>
-              <!--.titBox-->
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
+        <div class="event_controll_box">
+          <a href="#none" class="event_prev">이전</a><!-- 이전 -->
+          <a href="#none" class="event_pause">정지</a><!-- 정지 -->
+          <a href="#none" class="event_play">재생</a><!-- 재생 -->
+          <a href="#none" class="event_next">다음</a><!-- 다음 -->
+        </div>
       </article>
       <!--#sec3-->
     </section>
@@ -504,7 +758,7 @@
       <div id="sec4">
 				<article class="artic1">
 					<span>창업지원센터 YOUTUBE</span><em></em>
-					<ul class="clear">
+					<ul class="clear center">
             <li>
               <a href="#">
                 <img src="img/bg08.jpg" alt="">
@@ -534,7 +788,29 @@
       <!--#sec4-->
       <div id="sec5">
 				<span>Photo Gallery</span>
-				<ul class="clear">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">      
+              <a href="#">
+                <img src="img/bg08.jpg" alt="이미지에 대한 설명">
+                <b>충북대학교 창업지원단</b>               
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="img/bg09.jpg" alt="이미지에 대한 설명">
+                <b>충북대학교 창업지원단</b>  
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="img/bg08.jpg" alt="이미지에 대한 설명">
+                <b>충북대학교 창업지원단</b> 
+              </a>
+            </div>        
+          </div>
+        </div>
+				<ul class="clear gallery">
           <li>
             <a href="#">
               <img src="img/bg08.jpg" alt="">
