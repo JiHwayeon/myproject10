@@ -84,7 +84,7 @@
   height: 75px;
 }
 nav {
-  padding-left: 20%;
+  padding-left: 18%;
   position: absolute;
   left: 0;
   top:0px;
@@ -97,7 +97,7 @@ nav {
 nav::before{
   content: '';
   display: block;
-  width: 20%;
+  width: 18%;
   height: 680px;
   background: url(../img/ml.png) no-repeat;
   background-position: center;
@@ -113,7 +113,7 @@ nav::before{
   text-align: center;
 }
 .gnb > li > a {
-  padding: 0 1.9em;
+  padding: 0 1.4em;
   font-size: 1.2em;
   color: #363636;
   font-weight: 500;
@@ -135,7 +135,7 @@ nav::before{
   width: 100%;
   height: 680px;
   transition: all 0.5s;
-  padding: 0 1em; 
+  padding: 0 0.8em; 
   border-right: 1px solid #dcdcdc;
   background-color: #fff;
 }
@@ -515,6 +515,80 @@ background-color:#0d1b56;
 .mobileWrap{
   display: none;
 }
+/*------------실시간검색어창----------------*/
+#best_search {
+  width: 220px;
+  position: absolute;
+  right: 15px;
+  top: 22px;
+  z-index: 111;
+	text-align:right;
+}
+#best_search_show{
+  display: none;
+  width: 250px;
+  padding: 15px 20px;
+  z-index: 1500;
+  position: absolute;
+  top:195px;
+  right: 15px;
+  border: 1px solid #515050;
+  background-color: #fff;
+}
+@media screen and (min-width:1600px){
+  #best_search {
+    width: 220px;
+    top: 22px;
+    text-align:center;
+  }
+}
+#best_search li,dd {
+	display:inline-block;
+	vertical-align:middle;
+}
+#best_search dd  a.t{
+	cursor:pointer;
+	margin:0px;
+	color:#ba1f54;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:94px;
+	white-space:nowrap;
+	display:inline-block;
+	text-align:left;
+	vertical-align:middle;
+}
+dd .num {
+	color:#ba1f54;
+	font-size:0.8em;
+	margin-right:10px;
+	vertical-align:middle;
+	width:18px;
+	height:18px;
+	float:left;
+  font-weight: 600;
+	line-height:18px;
+	text-align:center;
+  margin-top: 3px;
+}
+#best_search_show li > dl{
+  margin: 12px 0;
+}
+#best_search_show li b{
+  color: #2366a8;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-right: 20px;
+}
+#best_search_show li:first-child{
+  font-size: 0.8em;
+}
+#best_search dd:hover  a.t{
+  text-decoration: underline;
+}
+#best_search_show dd:hover  a.t{
+  text-decoration: underline;
+}
 @media screen and (max-width:768px){
 #wrap{
   max-width: 768px;
@@ -568,6 +642,10 @@ background-color:#0d1b56;
   cursor: pointer;
   background-color: transparent;
   transform: translateY(-50%);
+}
+/*-------------실시간창----------------*/
+#best_search{
+  display: none;
 }
 /*----------모바일menubar------------*/
 .mMenubar{
