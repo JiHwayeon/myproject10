@@ -755,7 +755,6 @@ background-color: #d8d8d8;
   width:13px;height:13px;
   content:'';
   background:url('../img/menu_arrow.png') no-repeat center center; background-size: 70%;}
-  .mobileWrap .menuWrap >li.has-sub:nth-child(6) > a::after,
   .mobileWrap .menuWrap >li.has-sub:last-child > a::after{
     background: none;
   }

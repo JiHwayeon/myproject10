@@ -1233,5 +1233,39 @@
 	.location{
 		display:none
 	}
+/*-------------창업상담----------------*/
+.tA10 {
+	width: 100%;
+	margin: 40px auto 20px;
+	overflow-x: auto;
+}
+.td.big {
+	FONT-SIZE: 0.85em;
+	height: 30px;
+	line-height: 30px;
+}
+.td {
+	font-size: 0.8em;
+	height: 30px;
+	line-height: 30px;
+}
+.td.left{
+	padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
