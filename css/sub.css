@@ -1744,3 +1744,34 @@ button.download, button.submit{
 	height: 200px;
 	border: 1px solid #CCCCCC;
 }
+.stepImg20 {
+	width: 100%;
+	margin-bottom: 25px;
+}
+.stepImg20 img {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+.stepImg21 {
+	width: 100%;
+	margin-bottom: 25px;
+}
+.stepImg21 img {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+button.mentor{
+	display: block;
+	margin: 50px auto 100px;
+	border-radius: 30px;
+	background-color: #4e2827;
+	width: 500px;
+	height:45px;
+	line-height: 45px;
+	text-align: center;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 500;
+}
