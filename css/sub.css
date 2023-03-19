@@ -1695,24 +1695,29 @@ button.download, button.submit{
 	text-align: left;
 	COLOR: #ffffff;
 	FONT-SIZE: 1em;
-	border-right: 1px solid rgb(214, 214, 214);
-	border-left: 1px solid rgb(214, 214, 214);
+	border-right: 1px solid #e9e8e8;
+	border-left: 1px solid #e9e8e8;
 	font-weight: 500;
 	height: 40px;
 	line-height: 40px;
-	border-top: 2px solid #6d6d6d;
 	padding-left: 25px;
 }
 .td {
 	font-size: 0.9em;
 	height: 40px;
 	line-height: 40px;
-	BORDER-BOTTOM: #c3c3c3 1px solid;
+	BORDER-BOTTOM: #e9e8e8 1px solid;
 	text-align: center;
 	color: #0e0e0e;
-	border-right: 1px solid rgb(214, 214, 214);
-	border-left: 1px solid rgb(214, 214, 214);
+	border-right: 1px solid #e9e8e8;
+	border-left: 1px solid #e9e8e8;
 	background-color: #fff;;
+}
+.td:first-child{
+	border-left: none;
+}
+.td:last-child{
+	border-right: none;
 }
 .td.color{
 	background-color:rgba(201, 219, 235, 0.2) ;
@@ -1720,7 +1725,7 @@ button.download, button.submit{
 }
 .td.left{
 	text-align: left;
-	padding-left: 22px;
+	padding-left: 2%;
 }
 .td.left.right > input {
 	margin-right: 10px;
@@ -1730,7 +1735,7 @@ button.download, button.submit{
 	line-height: 1.35;
 }
 .inputbox {
-	border: 1px solid #CCCCCC;
+	border: 1px solid #e9e8e8;
 	background: #FFFFFF;
 	padding: 5px 5px;
 	margin: 0 auto;
