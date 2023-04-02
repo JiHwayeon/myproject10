@@ -397,7 +397,143 @@ $(document).ready(function(){
 			}(jQuery, window, document));
 				
 			});//끝
-
+		//실시간검색어창
+		$(document).ready(function(){//시작
+			function view(arg){
+				$(".time1, .time2, .time3, .time4,.time5, .time6, .time7, .time8").css("display","none");
+				if(arg=="0") {
+					$(".time1").css("display","block");
+					viewcount = 1;
+				}
+				else if(arg=="1") {
+					$(".time2").css("display","block");
+					viewcount = 2;
+				}
+				else if(arg=="2") {
+					$(".time3").css("display","block");
+					viewcount = 3;
+				}
+				else if(arg=="3") {
+					$(".time4").css("display","block");
+					viewcount = 4;
+				}
+				else if(arg=="4") {
+					$(".time5").css("display","block");
+					viewcount = 5;
+				}
+				else if(arg=="5") {
+					$(".time6").css("display","block");
+					viewcount = 6;
+				}
+				else if(arg=="6") {
+					$(".time7").css("display","block");
+					viewcount = 7;
+				}
+				else if(arg=="7") {
+					$(".time8").css("display","block");
+					viewcount = 0;
+				}
+			}
+			var viewcount = 0;
+			var rtcarousel = setInterval(function(){ view(viewcount) },3000);
+			
+			// $("#best_search").mouseenter(function() {
+			// 	clearInterval(rtcarousel);
+			// });
+			
+			// $("#best_search").mouseleave(function() {
+			// 	rtcarousel = setInterval(function(){ view(viewcount) },3000);
+			// });
+		});//끝	
+		$(document).ready(function(){//시작
+			$("#best_search").mouseenter(function() {
+				$("#best_search_show").css("display","block");
+			});
+			$("#best_search").mouseleave(function() {
+				$("#best_search_show").css("display","none");
+			});
+			$("#best_search_show").mouseenter(function() {
+				$("#best_search_show").css("display","block");
+			});
+			$("#best_search_show").mouseleave(function() {
+				$("#best_search_show").css("display","none");
+			});
+			
+			});
+	//-수강신청 클릭 시 팝업창 
+	$(function(){
+		$("#modal-open01").click(function(){   $("#popup01").css('display','flex').hide().fadeIn();
+		});
+		$("#close01, #close02").click(function(){
+				modalClose();
+		});
+		function modalClose(){
+			$("#popup01").fadeOut();
+		}  
+													
+	});  
+	$(document).ready(function(){//시작
+		$('.id_btn1').click(function(){
+		if($(this).hasClass('popactive')){
+		$('.id_btn1').removeClass('popactive');
+	} else {
+			$('.id_btn1').removeClass('popactive');
+			$(this).addClass('popactive');
+			}
+			});
+		$('.id_btn2').click(function(){
+			if($(this).hasClass('popactive')){
+			$('.id_btn2').removeClass('popactive');
+	} else {
+				$('.id_btn2').removeClass('popactive');
+				$(this).addClass('popactive');
+				}
+				});
+		$('.id_btn3').click(function(){
+			if($(this).hasClass('popactive')){
+			$('.id_btn3').removeClass('popactive');
+		} else {
+				$('.id_btn3').removeClass('popactive');
+				$(this).addClass('popactive');
+				}
+				});
+			$('.id_btn4').click(function(){
+				if($(this).hasClass('popactive')){
+				$('.id_btn4').removeClass('popactive');
+		} else {
+					$('.id_btn4').removeClass('popactive');
+					$(this).addClass('popactive');
+					}
+					});
+			$('.id_btn5').click(function(){
+				if($(this).hasClass('popactive')){
+				$('.id_btn5').removeClass('popactive');
+			} else {
+					$('.id_btn5').removeClass('popactive');
+					$(this).addClass('popactive');
+					}
+					});
+				$('.id_btn6').click(function(){
+					if($(this).hasClass('popactive')){
+					$('.id_btn6').removeClass('popactive');
+			} else {
+						$('.id_btn6').removeClass('popactive');
+						$(this).addClass('popactive');
+						}
+						});
+	});//끝 
+//-게시판 비밀번호 팝업창 
+$(function(){
+	$("#modal-pw01, #modal-pw02, #modal-pw03, #modal-pw04, #modal-pw05, #modal-pw06, #modal-pw07, #modal-pw08, #modal-pw09, #modal-pw10, #modal-pw11").click(function(){   $("#popup02").css('display','flex').hide().fadeIn();
+	});
+	$("#close03, #close04").click(function(){
+			modalClose();
+	});
+	function modalClose(){
+		$("#popup02").fadeOut();
+	}  								
+});  
+			
 
 
 	

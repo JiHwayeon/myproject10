@@ -1261,19 +1261,92 @@ button.mentor{
 	line-height: 35px;
 	font-size: 0.9em;
 }
+.board-wrap.list{
+	width: 100%;
+	overflow-x: auto;
+}
+.board-wrap.list table {
+	width: 100%;
+	margin: 5px auto 100px;
+}
+.board-wrap.list table thead th {
+  font-size: 0.9em;
+}
 
+.board-wrap.list table tbody td {
+  font-size: 0.9em;
+}
+.filter{
+	margin-top: 15px;
+}
+.filter .total {
+	float: left;
+  width: 25%;
+	padding: 10px 5px 0 10px;
+  font-size: 0.9em;
+}
+.filter .field{
+	float: right;
+	width: 75%;
+}
+.filter .field .chk-select {
+  width:20%;
+  margin-right: 5%;
+	height: 30px;
+	font-size: 0.8em;
+}
+.filter .field .chk-input {
+  width:75%;
+}
+.filter .field .chk-input input {
+  padding-right: 32px;
+}
+.filter .field .enter {
+  width: 25px;
+  height: 25px;
+	background-size: 60%;
+	background-position: center 7px;
+  
+}
+.chk-input input {
+  height: 30px;
+	font-size: 12px;
+}
+.chk-select select {
+  height: 30px;
+	font-size: 12px;
+	padding: 0 10px 0 10px;
+}
+.chk-input input:placeholder {
+  font-size: 0.8em;
+}
+.board-wrap.list table thead th {
+  padding: 10px 5px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.board-wrap.list table tbody td {
+  padding: 10px 5px;
+}
+.board-wrap.list img.thumbnail {
+  max-width: 100px;
+}
+.record-wrap.list {
+  padding-top: 10px;
+	margin-bottom: 120px;
+}
+.record-wrap.list .list li {
+  width: 48%;
+  margin: 0 ;
+	margin-right: 4%;
+}
+.record-wrap.list .list li:nth-child(2n){
+	margin-right: 0;
+}
+.filter .field .chk-input.gallery {
+  width:100%;
+}
+.record-wrap.list .list ul {
+  margin: 0 
+}
 
 }
