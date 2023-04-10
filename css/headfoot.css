@@ -184,15 +184,18 @@ nav::before{
 .accordion >span{
   font-weight:400;
 }
+.underMenu{
+  margin-top: 15px;
+}
 .underMenu li {
   height: 40px;
   line-height: 40px;
   text-align: left;
-  padding-left: 36px;
+  padding-left: 4px;
 }
 .underMenu li >a{
   font-size: 1em;
-  color: #2f6ca9;
+  color: #6e6f6f;
 }
 .gnb > li> .submenu:hover  > li > .underMenu li >a{
   color: #fff;
@@ -207,11 +210,29 @@ nav::before{
   height: 50px;
   line-height: 50px;
   text-align: left;
-  padding-left: 36px;
+  padding-left: 16px;
 }
 .underMenu2 li >a{
   font-size: 0.9em;
   color: #fff;
+}
+.underMenu3{
+  padding: 0 0 10px;
+  border-bottom: 1px solid #dedede;
+}
+.underMenu3 li {
+  height: 35px;
+  line-height: 35px;
+  text-align: left;
+  padding-left: 16px;
+}
+.underMenu3 li >a{
+  font-size: 1em;
+  color: #6e6f6f;
+}
+.underMenu4{
+  padding: 0 0 ;
+  border-bottom: 1px solid #dedede;
 }
 .mgnb > li {
   float: left;
@@ -312,7 +333,7 @@ background-color:#0d1b56;
   position: fixed; 
   top: 0; right: -100%;
   background-color: rgba(0, 0, 0, 0.9);
-  z-index: 113;
+  z-index: 1503;
   padding: 3% 2%;
 }
 .close1{
@@ -778,10 +799,12 @@ padding: 6px 10px 16px;
   line-height:45px;
   border-bottom:1px solid #d7d7d7
 }
-.mobileWrap .menuWrap >li> ul > li.open > a,
-.mobileWrap .menuWrap >li> ul > li.on > a,
-.mobileWrap .menuWrap >li> ul > li > a:hover{color:#4361c3;
-font-weight:500
+.mobileWrap .menuWrap >li> ul > li > span {
+  display: block;
+  padding: 0 15px;
+  font-size: 1em;
+  color: #222;
+  line-height: 45px;
 }
 .mobileWrap .menuWrap >li> ul > li > ul{
   display:none;
@@ -794,10 +817,7 @@ font-weight:500
   padding:2px 10px 2px 20px;
   font-size:14px;
 }
-.mobileWrap .menuWrap >li> ul > li > ul li.on > a,
-.mobileWrap .menuWrap >li> ul > li > ul li > a:hover{
-  color:#4361c3;
-}
+
 .loginBox{
   width: 94%;
   height: 35px !important;

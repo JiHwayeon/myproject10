@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>공지사항</title>
+  <title>창업상담</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/headfoot.css">
   <link rel="stylesheet" href="css/sub.css">
@@ -347,18 +347,19 @@
       <div class="pagGud">
         <ul class="location">
           <li class="home">HOME</li>
-          <li class="menu1">공지사항</li>
-          <li class="menu2">스타트업 이벤트</li>        
+          <li class="menu1">창업상담</li>
+          <li class="menu2">상담방법</li>
+          <li class="menu3">창업지원단 창업상담</li>         
         </ul>
       </div><!--.pagGud-->
-      <h2 class="title">스타트업 이벤트</h2>   
+      <h2 class="title">상담방법</h2>   
       <aside id="mb_lnb">
         <ul>
           <li class="depth1">
-            <button type="button">공지사항</button>
+            <button type="button">창업상담</button>
             <ul style="display: none;">
               <li>
-                <a href="#">안내</a>
+                <a href="#">소개</a>
               </li>
               <li>
                 <a href="#">창업친화적제도</a>
@@ -374,25 +375,29 @@
               <li>
                 <a href="#">창업교육</a>
               </li>
-              <li>
+              <li class="on">
                 <a href="#">창업상담</a>
               </li>
-              <li class="on">
+              <li>
                 <a href="#">공지사항</a>
               </li>
            </ul>
           </li>
           <li class="depth2">
-            <button type="button">공지사항</button>
+            <button type="button">창업상담</button>
             <ul style="display: none;">
               <li class="on">
-                <a href="sub_notice.html"><span>공지사항</span></a>
+                <a href="#" style="cursor: auto;">상담방법</a>
+                <ol class="underMenu4">
+                  <li><a href="sub_counsel1.html">- 창업지원센터 창업상담</a></li>
+                  <li><a href="sub_counsel3.html">- 창업지원단 창업상담</a></li>
+                </ol>
               </li>
-              <li><a href="sub_news.html"><span>뉴스</span></a></li>
               <li>
-                <a href="sub_gallery.html"><span>갤러리</span></a>
+                <a href="sub_counsel2.html">
+                  원스톱 상담창구
+                </a>
               </li>
-              <li><a href="sub_event.html"><span>스타트업 이벤트</span></a></li>
            </ul>
           </li>
  
@@ -400,209 +405,38 @@
       </aside>
       <!--#mb_lnb-->
       <aside id="lnbCon">
-        <h2>스타트업 이벤트</h2>
+        <h2>상담방법</h2>
         <div id="lnb">
-         <ul class="menuWrap clear">
+         <ul class="menuWrap1 clear">
           <li class="smallTit2">
-            공지사항
+           창업상담
+          </li>
+          <li class="has-sub1">
+            <a href="#" style="cursor: auto;">상담방법</a>
+            <button type="button">열기</button>
+            <ul>
+              <li><a href="sub_counsel1.html">창업지원센터 창업상담</a></li>
+              <li><a href="sub_counsel3.html">창업지원단 창업상담</a></li>    
+            </ul> 
           </li>
           <li>
-            <a href="sub_notice.html">공지사항</a>
+            <a href="sub_counsel2.html">
+              원스톱 상담창구
+            </a>
           </li>
-          <li><a href="sub_news.html">뉴스</a></li>
-          <li>
-            <a href="sub_gallery.html">갤러리</a>
-          </li>
-          <li><a href="sub_event.html">스타트업 이벤트</a></li>
          </ul>   
         </div>
       </aside>
       <!--#lnbCon-->  
       <div id="content">
-        <div class="board">
-          <form name="" id="" action="">
-            <input type="hidden" id="hdnPage" name="page" value="0">
-            <div class="filter">
-              <p class="total">전체 <span>11</span></p>
-              <div class="field">
-                <p class="chk-select">
-                  <select name="searchType">
-                    <option value="" selected="selected">전체</option>
-                    <option value="SUBJECT">제목</option>
-                    <option value="CONTENT">내용</option>
-                  </select>
-                </p>
-                <p class="chk-input">
-                  <input type="text" name="keyword" placeholder="검색어를 입력하세요." value="" style="color: rgb(102, 102, 102);">
-                </p>
-                <button type="submit" class="enter search-btn">
-                  <span class="blind">검색</span>
-                </button>
-              </div>
-            </div>
-          </form>
-          <div class="board-wrap list qna">
-            <div class="list notice">
-              <table>
-                <colgroup>
-                  <col width="100">
-                  <col width="*">
-                  <col width="120">
-                  <col width="100">
-                  <col width="100">
-                  <col width="100">
-                </colgroup>
-                <thead>
-                <tr>
-                  <th>번호</th>
-                  <th>제목</th>
-                  <th>답변여부</th>
-                  <th>작성자</th>
-                  <th>등록일</th>
-                  <th>조회</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>11</td>
-                  <td class="l">
-                    <a href="#" id="modal-pw11">충북대학교 창업지원센터</a>
-                  </td>
-                  <td>
-                    <span class="answer-before">답변대기</span>
-                  </td>
-                  <td>신윤호</td>
-                  <td>2023-03-15</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td class="l">
-                    <a href="#" id="modal-pw10">충북대학교 창업지원센터</a>
-                  </td>
-                  <td>
-                    
-                    <span class="answer-complete">답변완료</span>
-                  </td>
-                  <td>유혜린</td>
-                  <td>2023-02-06</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td class="l">
-                    <a href="#" id="modal-pw09">충북대학교 창업지원센터</a>
-                  </td>
-                  <td>
-                    
-                    <span class="answer-complete">답변완료</span>
-                  </td>
-                  <td>조덕희</td>
-                  <td>2023-02-01</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td class="l">
-                    <a href="#" id="modal-pw08">충북대학교 창업지원센터</a>
-                  </td>
-                  <td>
-                    <span class="answer-before">답변대기</span>
-                    
-                  </td>
-                  <td>양희훈</td>
-                  <td>2023-01-30</td>
-                  <td>0</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td class="l">
-                    <a href="#" id="modal-pw07">충북대학교 창업지원센터</a>
-                  </td>
-                  <td>
-                    <span class="answer-before">답변대기</span>
-                    
-                  </td>
-                  <td>송나영</td>
-                  <td>2023-01-25</td>
-                  <td>14</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td class="l">
-                    <a href="#" id="modal-pw06">충북대학교 창업지원센터</a>
-                  </td>
-                  <td>
-                    <span class="answer-before">답변대기</span>
-                    
-                  </td>
-                  <td>손민정</td>
-                  <td>2022-12-27</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td class="l">
-                    <a href="#" id="modal-pw05">충북대학교 창업지원센터</a>
-                  </td>
-                  <td>
-                    <span class="answer-before">답변대기</span>
-                    
-                  </td>
-                  <td>박소현</td>
-                  <td>2022-12-13</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td class="l">
-                    <a href="#" id="modal-pw04">충북대학교 창업지원센터</a>
-                  </td>
-                  <td>
-                    
-                    <span class="answer-complete">답변완료</span>
-                  </td>
-                  <td>이주영</td>
-                  <td>2022-11-29</td>
-                  <td>0</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td class="l">
-                    <a href="#" id="modal-pw03">충북대학교 창업지원센터</a>
-                  </td>
-                  <td>
-                    <span class="answer-before">답변대기</span>
-                    
-                  </td>
-                  <td>정희선</td>
-                  <td>2022-11-21</td>
-                  <td>8</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td class="l">
-                    <a href="#" id="modal-pw02">충북대학교 창업지원센터</a>
-                  </td>
-                  <td>
-                    <span class="answer-before">답변대기</span>
-                    
-                  </td>
-                  <td>김도은</td>
-                  <td>2022-11-11</td>
-                  <td>3</td>
-                </tr>
-                
-                </tbody>
-
-              </table>
-              <div class="board-btn">
-                <a href="#">문의하기</a>
-              </div>
-              
-            </div>
-          </div>
+        <div class="step">
+          <span class="tit">창업지원단</span>
+            <p class="stepImg21">
+              <img src="img/counsel2.png" alt="">
+            </p>
+            <button type="button" class="mentor">멘토링 신청하기</button>
         </div>
+        <!--.step-->
       </div>
       <!--#content-->
     </div>
@@ -679,21 +513,5 @@
     <!--form-->
   </div>
   <!--#wrap-->
-  <div class="popup-wrap02" id="popup02">
-    <div class="popup02">
-      <div class="poptit">
-        <span>상담문의 확인</span>
-        <button type="button" id="close03"><img src="img/btn_pop_close.png" alt="닫기"></button>
-      </div> <!--.poptit-->
-      <div class="pw">
-        <span>비밀번호</span>
-        <input type="text" placeholder="비밀번호를 입력해주세요.">
-      </div><!--pw-->
-      <div class="submit">
-        <button type="button">확인</button>
-        <button type="button" id="close04">취소</button>
-      </div>
-    </div><!--popup01-->
-  </div><!--#popup01-->
 </body>
 </html>

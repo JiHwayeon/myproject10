@@ -1411,7 +1411,7 @@ ul.list4 > li > div >span:last-child{
 	line-height: 88px;
 	BORDER-BOTTOM: #c3c3c3 1px solid;
 	text-align: left;
-	padding-left: 20px;
+	padding:0 10px 0 25px;
 	color: #747474;
 	border-right: 1px solid rgb(214, 214, 214);
 	border-left: 1px solid rgb(214, 214, 214);
@@ -1601,7 +1601,7 @@ ol.list9 > li {
 	border-left: 1px solid rgb(214, 214, 214);
 }
 .td_blue12 {
-	padding: 33px 0px 33px 70px;
+	padding: 33px 0px 33px 50px;
 	line-height: 1.5;
 	BORDER-BOTTOM: #c3c3c3 1px solid;
 	text-align: left;
@@ -1735,16 +1735,19 @@ button.download, button.submit{
 	line-height: 1.35;
 }
 .inputbox {
-	border: 1px solid #e9e8e8;
+	border: none;
 	background: #FFFFFF;
 	padding: 5px 5px;
 	margin: 0 auto;
+	text-align: center;
+	width: 80%;
 }
 .webeditor{
 	height: 200px;
 	border: 1px solid #CCCCCC;
 }
 .stepImg20 {
+	margin-top: 80px;
 	width: 100%;
 	margin-bottom: 25px;
 }
@@ -1754,6 +1757,7 @@ button.download, button.submit{
 	margin: 0 auto;
 }
 .stepImg21 {
+	margin-top: 80px;
 	width: 100%;
 	margin-bottom: 25px;
 }
@@ -1768,13 +1772,79 @@ button.mentor{
 	border-radius: 30px;
 	background-color: #4e2827;
 	width: 500px;
-	height:45px;
-	line-height: 45px;
+	height:52px;
+	line-height: 52px;
 	text-align: center;
 	color: #fff;
 	font-size: 1.1em;
 	font-weight: 500;
 }
+.menuWrap1>li{
+  position: relative;
+  width: 100%;
+}
+.menuWrap1 > li button{
+  position:absolute;
+	top:0;left:0;
+  width:100%;
+	height:75px;
+	text-indent:-999px;
+	overflow:hidden;
+  background:none;
+	border:0;
+}
+.menuWrap1 > li{
+	position:relative;
+}
+ .menuWrap1 >li > a{
+  position:relative;
+}
+ .menuWrap1 >li.has-sub1 > a::after{
+  position:absolute;
+	top:50%;right:25px;
+  margin-top:-7px;
+	width:16px;height:16px;
+  content:'';
+  background:url('../img/menu_arrow.png') no-repeat center center; 
+	background-size: 80%;}
+.menuWrap1 >li.has-sub1.open > a::after{transform:rotate(180deg)}
+ .menuWrap1 >li> ul{
+  display:none;
+  background-color: rgb(247 247 247);
+  padding: 10px 5px 5px;
+  border-bottom: 1px solid #062e56;;
+}
+ .menuWrap1 >li> ul > li > a{
+	display:block;
+	padding:0 18px;
+	color:#222;
+	line-height:55px;
+	font-weight:500;
+	border-bottom:1px solid #d7d7d7
+}
+.menuWrap1 >li> ul > li:last-child a{
+	border-bottom: none;
+}
+ .menuWrap1 >li> ul > li.open > a,
+.menuWrap1 >li> ul > li.on > a,
+ .menuWrap1 >li> ul > li > a:hover{
+	color:#4361c3;
+	font-weight:500
+}
+ .menuWrap1 >li> ul > li > ul{
+	display:none;
+	padding:10px 0;
+	border-bottom:1px solid #d7d7d7}
+ .menuWrap1 >li> ul > li > ul li a{
+	position:relative;
+	display:block;
+	padding:2px 10px 2px 20px;
+	font-size: 1.1em;
+	}
+ .menuWrap1 >li> ul > li > ul li.on > a,
+ .menuWrap1 >li> ul > li > ul li > a:hover{color:#4361c3;}
+
+
 /*-------------공지사항---------------*/
 .filter {
   position: relative;
@@ -1962,7 +2032,7 @@ button.mentor{
 	width: 100%;
   border-top: 1px solid #000;
 }
-.record-wrap.list .list ul {
+.record-wrap.list .list > ul {
   margin: 0 -1%
 }
 
@@ -1972,29 +2042,29 @@ button.mentor{
   clear: both
 }
 
-.record-wrap.list .list li {
+.record-wrap.list .list > ul > li {
   float: left;
   width: 23%;
   margin: 0 1%;
   position: relative;
 }
 
-.record-wrap.list .list li:nth-child(n+5) {
+.record-wrap.list .list > ul > li:nth-child(n+5) {
   margin-top: 2%;
 }
 
-.record-wrap.list .list li a {
-  height: 280px;
+.record-wrap.list .list  > ul > li  a {
+  height: auto;
   display: block;
   border: 1px solid #d0d0d0;
 }
 
-.record-wrap.list .list li .img {
+.record-wrap.list .list  > ul > li .img {
   position: relative;
   overflow: hidden;
 }
 
-.record-wrap.list .list li .img img {
+.record-wrap.list .list  > ul > li .img img {
   height: 199px;
   width: 100%;
   object-fit: cover;
@@ -2003,20 +2073,48 @@ button.mentor{
   -o-transition: transform 0.6s ease-out;
   transition: transform 0.6s ease-out;
 }
-.record-wrap.list .list li .txt {
+.record-wrap.list .list  > ul > li .txt {
   border-top: 1px solid #d0d0d0;
   /*border-top: none;*/
-  height: 80px;
+  height: auto;
   box-sizing: border-box;
   padding: 15px;
   position: relative;
 }
-
-.record-wrap.list .list li .btxt {
+.record-wrap.list .list  > ul > li .txt > ul > li{
   font-size: 0.9em;
-  line-height: 1.3em;
+  margin: 0px 10px 8px 0px;  
+	width: 190px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
 }
-
+.record-wrap.list .list  > ul > li .txt > ul > li::after{
+	content: '...'; 
+	display: block; 
+	width: 1px; 
+	height: 22px; 
+	position: absolute; 
+	top:0;right: 0;
+  }
+.record-wrap.list .list  > ul > li  .btxt {
+  font-size: 0.9em;
+  margin: 0px 10px 8px 0px;  
+	width: 160px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+}
+.record-wrap.list .list li .btxt::after{
+	content: '...'; 
+	display: block; 
+	width: 1px; 
+	height: 22px; 
+	position: absolute; 
+	top:0;right: 0;
+  }
 .record-wrap.list .list li .stxt {
   margin-top: 17px;
   font-size: 14px;
@@ -2038,7 +2136,7 @@ button.mentor{
   -ms-transform: scale(1.1, 1.1);
 }
 
-.record-wrap.list .list li a:before {
+.record-wrap.list .list > ul > li a:before {
   width: 0;
   height: 1px;
   background: #000;
@@ -2054,7 +2152,7 @@ button.mentor{
   transition: width 0.4s ease-out;
 }
 
-.record-wrap.list .list li a:after {
+.record-wrap.list .list > ul > li a:after {
   width: 0;
   height: 1px;
   background: #000;
@@ -2070,7 +2168,7 @@ button.mentor{
   transition: width 0.4s ease-out;
 }
 
-.record-wrap.list .list li:before {
+.record-wrap.list .list > ul > li:before {
   width: 1px;
   height: 0;
   background: #000;
@@ -2086,7 +2184,7 @@ button.mentor{
   transition: height 0.4s ease-out;
 }
 
-.record-wrap.list .list li:after {
+.record-wrap.list .list > ul > li:after {
   width: 1px;
   height: 0;
   background: #000;
@@ -2598,4 +2696,18 @@ font-size: 1.1em;
 #close04{
 background-color: #dcdcdc;
 color: #0e0e0e;
+}
+/*-----------원스톱-----------*/
+select.belongs{
+	text-align: center;
+	width: 80%;
+	border: none;
+	padding: 0 15px;
+	outline: none;
+	margin: 0 auto;
+	appearance: none; -webkit-appearance: none;
+  background: url(../img/menu_arrow.png) no-repeat right 13px center;
+}
+select::-ms-expand {
+	opacity: 0;
 }

@@ -373,6 +373,26 @@ p.tit::after{
   top:0;right: 0;
 }
 .titBox > ul {
+  margin-top: 15px;
+}
+.titBox > ul > li{ 
+  width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 40px; 
+  line-height: 15px; 
+  position: relative;
+}
+.titBox > ul > li::after{
+  content: '...'; 
+  display: block; 
+  width: 1px; 
+  height: 22px; 
+  position: absolute; 
+  top:0;right: 0;
+}
+.titBox > ul {
   padding:0 15px;
 }
 .eventBox .slick-slide{
@@ -382,7 +402,7 @@ p.tit::after{
   display: block;
   width: 100%;
   padding: 3%;
-  height:510px ;
+  height:auto;
   background-color: rgba(241, 241, 241, 0.6);
 }
 .eventBox .slick-slide  img{

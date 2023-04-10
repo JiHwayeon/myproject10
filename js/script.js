@@ -532,7 +532,28 @@ $(function(){
 	function modalClose(){
 		$("#popup02").fadeOut();
 	}  								
-});  
+}); 
+//상담방법 왼쪽메뉴 펼치기
+$(document).ready(function(){//시작
+	$('.menuWrap1 li.has-sub1 > button').on('click', function(){
+		//$(this).removeAttr('href');
+		var element = $(this).parent('li');
+		if (element.hasClass('open')) {
+			element.removeClass('open');
+			element.find('li').removeClass('open');
+			element.find('ul').slideUp('fast');
+		}
+		else {
+			element.addClass('open');
+			element.children('ul').slideDown('fast');
+			// element.siblings('li').children('ul').slideUp('fast');
+			element.siblings('li').removeClass('open');
+			element.siblings('li').find('li').removeClass('open');
+			// element.siblings('li').find('ul').slideUp('fast');
+		}
+		return false;
+	});
+	});//끝 
 			
 
 
