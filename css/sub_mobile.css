@@ -1529,5 +1529,7 @@ font-size: 0.9em;
 .board-btn {
 	margin-bottom: 30px;
 }
-
+.popup03 > .box > .selectBox .select {
+	display: block;
+}
 }
