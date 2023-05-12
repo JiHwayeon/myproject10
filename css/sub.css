@@ -1693,7 +1693,6 @@ button.download, button.submit{
 	text-decoration: underline;
 	font-weight: 400;
 	display: inline-block;
-	margin-right: 10px;
 }
 .td_blue > a.lk:visited{
   color:#4a83b1;
