@@ -235,7 +235,7 @@
 		margin-bottom: 320px;
 	}
 	ul.plan > li.i17.i33{
-		margin-top: 405px;
+		margin-top: 505px;
     margin-bottom: 100px;
 	}
 	ul.plan > li.i17 > p.stepImg {
@@ -636,7 +636,7 @@
 	}
 	.box > .pic >li{
 		padding:12px;
-		height: 61vh;
+		height: 51vh;
 	}
 	.box > .pic >li >span{
 		padding: 35% 20%;
@@ -1267,7 +1267,7 @@ button.mentor{
 }
 .board-wrap.list table {
 	width: 100%;
-	margin: 5px auto 100px;
+	margin: 5px auto 30px;
 }
 .board-wrap.list table thead th {
   font-size: 0.9em;
@@ -1334,19 +1334,200 @@ button.mentor{
   padding-top: 10px;
 	margin-bottom: 120px;
 }
-.record-wrap.list .list li {
-  width: 48%;
-  margin: 0 ;
-	margin-right: 4%;
+.record-wrap.list .list > ul > li {
+	float: none;
+  width: 96%;
+  margin: 25px auto ;
 }
 .record-wrap.list .list li:nth-child(2n){
-	margin-right: 0;
+	margin-right: auto;
 }
 .filter .field .chk-input.gallery {
   width:100%;
 }
 .record-wrap.list .list ul {
   margin: 0 
+}
+.record-wrap.list .list  > ul > li .img img {
+  height: 150px;
+}
+/*-------------수강신청팝업---------------*/
+
+.popup01 {
+	width: 95%;
+	max-width:95%;
+}
+.popup01 .choice {
+	padding: 15px 5px;
+}
+#confirm01 {
+	padding: 8px;
+	background-color: #3f9dfc;
+	display: inline-block;
+	margin: 10px auto;
+	color: #fff;
+	width: 120px;
+	border-radius: 30px;
+	font-size: 15px;
+	margin-right: 10px;
+}
+.popup01 .poptit{
+height: 35px;
+line-height: 35px;
+font-size: 0.9em;
+}
+.popup01 .choice span{
+font-size: 0.9em;
+}
+.popup01 .choice .sec {
+	width: 49%;
+}
+.popup01 .choice .sec li{
+font-size: 0.9em;
+}
+.popup01 .attachFile{
+width: 95%;
+}
+.popup01 .attachFile .attach{
+font-size: 0.9em;
+}
+
+.popup01 .attachFile div .file li{
+margin-bottom: 13px;
+}
+.popup01 .choice .sec li button {
+	font-size: 0.8em;
+}
+.popup01 .attachFile div .file li span{
+font-size: 0.9em;
+width: 100%;
+margin-right: 0;
+margin: 0 auto;
+}
+.popup01 .attachFile div .file li a{
+width: 45%;
+margin: 15px auto;
+margin-right: 8%;
+}
+.popup01 .attachFile div .file li a button{
+font-size: 0.8em;
+}
+.popup01 .attachFile div .file li > button{
+	width: 45%;
+  margin: 15px 0;
+}
+.popup01 .attachFile div .file2 li .filebox {
+display: inline-block;
+width: 45%;
+margin: 15px 0;
+}
+.filebox label {
+width: 100%;
+}
+.popup01 .submit button{
+width: 90px;
+height: 33px;
+line-height: 33px;
+border-radius: 3px;
+}
+.popup01 .submit button:first-child{
+margin-right: 20px;
+}
+#close02{
+background-color: #dcdcdc;
+color: #0e0e0e;
+}
+/*-----------공지사항 조회화면------------------*/
+.board-wrap .listBtn {
+font-size: 0;
+margin-top: 40px;
+text-align: center;
+}
+.board-wrap .listBtn.r {
+text-align: right;
+}
+.bb-btn, .bw-btn{
+min-width:31%;
+height:40px;
+line-height:38px; 
+font-size:16px; 
+text-align:center; 
+display:inline-block;
+vertical-align:top;
+}
+.bb-btn{background:#393939; color:#fff;}
+.bb-btn:hover{background:#111; border:1px solid #111}
+.bw-btn{background:#fff; color:#393939;}
+.bw-btn:hover{background:#f0f0f0; border-color:#444}
+.board-wrap.detail .detail {
+border-bottom: 1px solid #ddd
+}
+.board-wrap.detail .detail h4 {
+font-size:1em;
+}
+.board-wrap.detail .tits {
+padding: 15px 20px;
+}
+.board-wrap.detail .tits ul {
+margin-top: 20px
+}
+.board-wrap.detail .tits ul:after {
+display: block;
+content: "";
+clear: both;
+}
+.board-wrap.detail .tits li {
+float: none;
+font-size: 0.9em;
+line-height: 1.5em;
+}
+.board-wrap.detail .tits li:nth-child(n+2) {
+margin-left: 0px;
+}
+.board-wrap.detail .tits li:nth-child(n+2) {
+margin-left: 0px;
+}
+.board-wrap.detail .cons {
+border-top: 1px solid #ddd;
+min-height: 200px;
+padding: 30px;
+font-size: 16px;
+color: #666;
+line-height: 1.5em;
+}
+.board-wrap.detail .others {
+border-top: 1px solid #ddd;
+}
+.board-wrap.detail .others li {
+position: relative;
+padding: 20px 20px 20px 95px
+}
+
+.board-wrap.detail .others li:nth-child(n+2) {
+border-top: 1px solid #ddd;
+}
+.board-wrap.detail .others li .btxt {
+padding-left: 15px;
+font-size: 0.9em;
+position: absolute;
+left: 0;
+top: 20px;
+}
+.board-wrap.detail .others li a {
+font-size: 0.9em;
+}
+.board-wrap.detail .tits li:nth-child(n+2):before {
+display:none;
+}
+.board-wrap.detail .files {
+padding: 15px 20px;
+}
+.board-wrap.detail .files li a {
+padding-left: 75px;
+font-size: 0.9em;
+}
+.board-btn {
+	margin-bottom: 30px;
 }
 
 }

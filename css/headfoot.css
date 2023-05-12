@@ -557,6 +557,7 @@ background-color:#0d1b56;
   border: 1px solid #515050;
   background-color: #fff;
 }
+
 @media screen and (min-width:1600px){
   #best_search {
     width: 130px;
@@ -573,7 +574,7 @@ background-color:#0d1b56;
 	color:#ba1f54;
 	text-overflow:ellipsis;
 	overflow:hidden;
-	width:94px;
+	width:140px;
 	white-space:nowrap;
 	display:inline-block;
 	text-align:left;
@@ -611,6 +612,14 @@ dd .num {
 #best_search_show dd:hover  a.t{
   text-decoration: underline;
 }
+#best_search_show dd  a.t span{
+	text-overflow:ellipsis;
+	overflow:hidden;
+	width:180px;
+  display: inline-block;
+	white-space:nowrap;
+	vertical-align:middle;
+}
 @media screen and (max-width:768px){
 #wrap{
   max-width: 768px;
@@ -622,7 +631,7 @@ dd .num {
   width: 100%;
 }
 #header{
-  height: 170px;
+  height: 185px;
 }
 .sch {
   width: 100%;
@@ -667,7 +676,7 @@ dd .num {
 }
 /*-------------실시간창----------------*/
 #best_search{
-  display: none;
+  margin: 10px 0;
 }
 /*----------모바일menubar------------*/
 .mMenubar{
@@ -701,11 +710,11 @@ background-color: #d8d8d8;
   z-index: 150;
   overflow: scroll;
 }
-.mobileWrap > div{
+.mobileWrap > div.mMenuhead{
   height: 60px;
   background-color: #646262;
 }
-.mobileWrap > div a.home{
+.mobileWrap > div.mMenuhead a.home{
   display: block;
   padding:30px;
   width: 25px;
@@ -713,7 +722,7 @@ background-color: #d8d8d8;
   background: url(../img/mhome.png) no-repeat center;
   background-size: 25px;
 }
-.mobileWrap > div a.home img{
+.mobileWrap > div.mMenuhead a.home img{
   display: block;
 }
 .mMenuhead{
@@ -744,7 +753,7 @@ background-color: #d8d8d8;
   font-weight: bold;
 }
 .mobileWrap .menuWrap{
-  height: 100%;
+  margin-bottom: 60px;
 }
 .mobileWrap .menuWrap>li{
   position: relative;
@@ -819,6 +828,7 @@ padding: 6px 10px 16px;
 }
 
 .loginBox{
+
   width: 94%;
   height: 35px !important;
   line-height: 35px;

@@ -770,7 +770,7 @@ margin-left: 35px;
 #visualWrap{
   display: block;
   width:100%;
-  margin: 190px auto 30px;
+  margin: 200px auto 30px;
   }
 #bg1 {
   background-size: 100%;
@@ -931,7 +931,7 @@ margin-left: 35px;
 }
 
 .eventBox .slick-slide  a{
-  height:400px ;
+  height:800px ;
 }
 .eventBox .slick-slide  img{
   height: 240px;
@@ -943,6 +943,27 @@ p.tit {
   font-size: 0.9em;
 }
 p.tit::after{
+  content: '...'; 
+  display: block; 
+  width: 1px; 
+  height: 22px; 
+  position: absolute; 
+  top:0;right: 0;
+}
+.titBox > ul {
+  padding: 0 8px;
+}
+.titBox > ul > li{ 
+  width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 30px; 
+  line-height: 15px; 
+  position: relative;
+  font-size: 0.9em;
+}
+.titBox > ul > li::after{
   content: '...'; 
   display: block; 
   width: 1px; 

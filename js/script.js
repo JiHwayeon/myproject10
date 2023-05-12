@@ -436,14 +436,7 @@ $(document).ready(function(){
 			}
 			var viewcount = 0;
 			var rtcarousel = setInterval(function(){ view(viewcount) },3000);
-			
-			// $("#best_search").mouseenter(function() {
-			// 	clearInterval(rtcarousel);
-			// });
-			
-			// $("#best_search").mouseleave(function() {
-			// 	rtcarousel = setInterval(function(){ view(viewcount) },3000);
-			// });
+
 		});//끝	
 		$(document).ready(function(){//시작
 			$("#best_search").mouseenter(function() {
@@ -554,7 +547,17 @@ $(document).ready(function(){//시작
 		return false;
 	});
 	});//끝 
-			
+	//-캘린더 클릭 시 팝업창 
+	$(function(){
+		$("#modal-content1").click(function(){   $("#popup03").css('display','flex').hide().fadeIn();
+		});
+		$("#close05, #close06").click(function(){
+				modalClose();
+		});
+		function modalClose(){
+			$("#popup03").fadeOut();
+		}  										
+	}); 		
 
 
 	
