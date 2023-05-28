@@ -547,17 +547,73 @@ $(document).ready(function(){//시작
 		return false;
 	});
 	});//끝 
-	//-캘린더 클릭 시 팝업창 
-	$(function(){
-		$("#modal-content1").click(function(){   $("#popup03").css('display','flex').hide().fadeIn();
-		});
-		$("#close05, #close06").click(function(){
-				modalClose();
-		});
-		function modalClose(){
-			$("#popup03").fadeOut();
-		}  										
-	}); 		
+//-캘린더 클릭 시 팝업창 
+$(function(){
+	// $("#modal-content1").click(function(){   $("#popup03").css('display','flex').hide().fadeIn();
+	// });
+	$("#close05, #close06").click(function(){
+			modalClose();
+	});
+	function modalClose(){
+		$("#popup03").fadeOut();
+	}  										
+}); 	
+$(function(){
+	// $("#modal-content2").click(function(){   $("#popup03").css('display','flex').hide().fadeIn();
+	// });
+	$("#close05, #close06").click(function(){
+			modalClose();
+	});
+	function modalClose(){
+		$("#popup03").fadeOut();
+	}  										
+}); 		
+	//마이페이지
 
-
+	$(document).ready(function(){
+		$('div.tapwrap > ul.tab li a').on('click', function (e) {
+			e.preventDefault();
+			var index = $('div.tapwrap > ul.tab li a').index(this);
+			$('div.tapwrap > ul.tab li, div.tapwrap > div.tab_contents').removeClass('active');
+			$('div.tapwrap > ul.tab li:eq('+ index +'), div.tapwrap > div.tab_contents:eq('+ index +')').addClass('active');
+		});
+	});
+	$(document).ready(function(){
+		$('div.myboard > ul.tab li a').on('click', function (e) {
+			e.preventDefault();
+			var index = $('div.myboard > ul.tab li a').index(this);
+			$('div.myboard > ul.tab li, div.myboard > div.tab_contents').removeClass('active');
+			$('div.myboard > ul.tab li:eq('+ index +'), div.myboard > div.tab_contents:eq('+ index +')').addClass('active');
+	  });
+	});
+//캘린더 마우스오버
+$(document).ready(function(){//시작
+	$("#modal").mouseenter(function() {
+		$("#popup03").css("display","block");
+	});
+	$("#modal").mouseleave(function() {
+		$("#popup03").css("display","none");
+	});
+	$("#popup03").mouseenter(function() {
+		$("#popup03").css("display","block");
+	});	
+	});
+//-캘린더 클릭 시 팝업창 
+$(function(){
+	$("#close05, #close06").click(function(){
+			modalClose();
+	});
+	function modalClose(){
+		$("#popup03").fadeOut();
+	}  										
+}); 	
+$(function(){
+	$("#close05, #close06").click(function(){
+			modalClose();
+	});
+	function modalClose(){
+		$("#popup03").fadeOut();
+	}  										
+}); 
+	
 	
