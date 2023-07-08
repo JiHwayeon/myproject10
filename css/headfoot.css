@@ -648,6 +648,7 @@ dd .num {
   height: 70px;
   line-height: 70px;
   font-size: 0.7em;
+  white-space: nowrap;
 }
 .search {
   width: 95%;

@@ -109,36 +109,49 @@ h2.title{
 	background-color: #fff;
 	border:1px solid #cbcccd;
 	position: absolute;
-	top:130px;
+	top:75px;
 	left:50%;
 	transform: translateX(-50%);
-	border-radius: 20px;
-	padding: 20px 10px 30px 10px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 }
-#lnb > ul > li.smallTit{
-	padding:15px 20px;
+#lnb.padbottom{
+	width: 100%;
+	background-color: #fff;
+	border:1px solid #cbcccd;
+	position: absolute;
+	top:99px;
+	left:50%;
+	transform: translateX(-50%);
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.smallTit{
+	padding:25px 20px;
 	min-height:60px;
 	font-size:1.5em;
 	font-weight:500;
-	color: #383838;
 	text-align: center;
-	border-bottom: 3px solid #0054a6;
   background-size: 100%;
 	position: relative;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	color: #fff;
+	background-color: #00377b;
 }
-#lnb > ul > li.smallTit::after{
+.smallTit::after{
   position:absolute;
-	top:50%;
+	top:55%;
 	right:70px;
 	width:15px;
 	height:15px;
 	content:'';
 	display: block;
-	background:url('../img/banner_right_btn.png') no-repeat;
+	background:url('../img/banner_right_btn2.png') no-repeat;
 	background-size: 9px;
 	transform: translateY(-50%) rotate(90deg);
 }
-#lnb > ul > li > a{
+#lnb > ul > li > a, #lnb.padbottom > ul > li > a{
 	display:block;
 	line-height: 78px;
 	height: 78px;
@@ -147,14 +160,23 @@ h2.title{
 	border-bottom:1px solid #062e56;
 	transition:all 0.2s ease;
 	padding-left: 20px;
+	margin: 0 10px 0px 10px;
 }
-#lnb > ul > li > a > span{
+#lnb > ul > li:last-child a, #lnb.padbottom > ul > li:last-child a {
+	margin-bottom: 20px;
+}
+#lnb > ul > li > a > span, #lnb.padbottom > ul > li > a > span{
  padding: 14px 0 13px;
  display: block;
  line-height: 1.35;
 }
 #lnb > ul > li.on > a,
 #lnb > ul > li > a:hover{
+	color:#fff;
+	background:#80a1cc;
+}
+#lnb.padbottom > ul > li.on > a,
+#lnb.padbottom > ul > li > a:hover{
 	color:#fff;
 	background:#80a1cc;
 }
@@ -260,31 +282,28 @@ legend{
 	line-height: 1.35;
 }
 /*-----------친화적제도--------------------*/
-#subContainer #lnbCon h2.lh {
-	font-size: 1.5em;
-	padding: 38px 0 60px;
-	line-height: 1.35;
-}
-#lnb > ul > li.smallTit2{
-	padding:15px 20px;
+.smallTit2{
+	padding:25px 20px;
 	min-height:60px;
 	font-size:1.5em;
 	font-weight:500;
-	color: #383838;
 	text-align: center;
-	border-bottom: 3px solid #0054a6;
   background-size: 100%;
 	position: relative;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	color: #fff;
+	background-color: #00377b;
 }
-#lnb > ul > li.smallTit2::after{
+.smallTit2::after{
   position:absolute;
-	top:50%;
-	right:20px;
+	top:55%;
+	right:30px;
 	width:15px;
 	height:15px;
 	content:'';
 	display: block;
-	background:url('../img/banner_right_btn.png') no-repeat;
+	background:url('../img/banner_right_btn2.png') no-repeat;
 	background-size: 9px;
 	transform: translateY(-50%) rotate(90deg);
 }
@@ -699,26 +718,29 @@ ul.doc >li::before{
   background-size: 90%;
 }
 /*--------창업대체학점인정제 이수인정-----------------*/
-#lnb > ul > li.smallTit3{
-	padding:15px 5px;
+.smallTit3{
+	padding:25px 5px;
 	min-height:60px;
 	font-size:1.3em;
 	font-weight:500;
 	color: #383838;
 	text-align: center;
-	border-bottom: 3px solid #0054a6;
-  background-size: 100%;
+    background-size: 100%;
 	position: relative;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	color: #fff;
+	background-color: #00377b;
 }
-#lnb > ul > li.smallTit3::after{
-  position:absolute;
+.smallTit3::after{
+    position:absolute;
 	top:50%;
-	right:15px;
+	right:25px;
 	width:15px;
 	height:15px;
 	content:'';
 	display: block;
-	background:url('../img/banner_right_btn.png') no-repeat;
+	background:url('../img/banner_right_btn2.png') no-repeat;
 	background-size: 9px;
 	transform: translateY(-50%) rotate(90deg);
 }
